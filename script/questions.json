@@ -731,13 +731,203 @@
         "correct": "optionB"
     },
 	{
-        "question": "",
-        "optionA": "",
-        "optionB": "",
-        "optionC": "",
-        "optionD": "",
-        "optionE": "",
+        "question": "<div class='code'>int c = 2; <br> int pippo(int a) { <br>&nbsp;&nbsp;&nbsp;c = c + 2; <br>&nbsp;&nbsp;&nbsp;return a * 2; <br>} <br>int pluto(void) {<br>&nbsp;&nbsp;&nbsp;return pippo(c + 1); <br>}</div>Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
+        "optionA": "10",
+        "optionB": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "6",
+        "optionE": "Non è possibile passare c + 1 per valore",
         "optionF": "",
-        "correct": "option"
+        "correct": "optionD"
+    },
+	{
+        "question": "<div class='code'>int r(int x) {<br>&nbsp;&nbsp;&nbsp; return r(x - 1);<br>}<br>int f(int a, int b, int c) {<br>&nbsp;&nbsp;&nbsp;if (c == 1)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a;<br>&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return b;<br>}</div>Si consideri lo pseudo-codice. Qual è il valore di ritorno di f(1,r(1),1) se i parametri sono passati per nome?",
+        "optionA": "Non è possibile dirlo senza conoscere il tipo di scope (statico o dinamico) utilizzato",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "1",
+        "optionD": "Si ha ricorsione infinita",
+        "optionE": "0",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "<div class='code'>int a, b, c;<br>void pippo(void) {<br>&nbsp;&nbsp;&nbsp;int a;<br>&nbsp;&nbsp;&nbsp;a = 6;<br>&nbsp;&nbsp;&nbsp;b = 5;<br>}<br>  void pluto(void) {<br>  &nbsp;&nbsp;&nbsp;int c;<br>  &nbsp;&nbsp;&nbsp;int b;<br>  &nbsp;&nbsp;&nbsp;pippo();<br>  &nbsp;&nbsp;&nbsp;c = 3;<br>  &nbsp;&nbsp;&nbsp;a = 4;<br>  }<br>  void topolino(void) {<br>  &nbsp;&nbsp;&nbsp;int a;<br>  &nbsp;&nbsp;&nbsp;a = 1;<br>  &nbsp;&nbsp;&nbsp;b = 10;<br>&nbsp;&nbsp;&nbsp;pluto();<br>&nbsp;&nbsp;&nbsp;c = a + b;<br>}</div>Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope dinamico?",
+        "optionA": "14",
+        "optionB": "3",
+        "optionC": "Non è possibile dirlo",
+        "optionD": "6",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "<div class='code'>  int x, y, z;<br>  void f3(void) {<br>      &nbsp;&nbsp;&nbsp;x = 0;<br>      &nbsp;&nbsp;&nbsp;y = 5;<br>  }<br>  void f2(void) {<br>      &nbsp;&nbsp;&nbsp;int y;<br>      &nbsp;&nbsp;&nbsp;f3();<br>      &nbsp;&nbsp;&nbsp;y = 0;<br>      &nbsp;&nbsp;&nbsp;z = 10;<br>  }<br>  int f1(void) {<br>      &nbsp;&nbsp;&nbsp;int x;<br>      &nbsp;&nbsp;&nbsp;x = -5;<br>      &nbsp;&nbsp;&nbsp;y = 10;<br>      &nbsp;&nbsp;&nbsp;z = x + y;<br>      &nbsp;&nbsp;&nbsp;f2();<br>      &nbsp;&nbsp;&nbsp;return z - y - x;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di f1(), assumendo scope statico?",
+        "optionA": "5",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Non è possibile dirlo",
+        "optionD": "0",
+        "optionE": "-5",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "<div class='code'>  int b = 666;<br>  int pippo(int x) {<br>      &nbsp;&nbsp;&nbsp;x = 666;<br>      &nbsp;&nbsp;&nbsp;b = 1;<br>      &nbsp;&nbsp;&nbsp;return x / 2;<br>  }<br>  int pluto(void) {<br>      &nbsp;&nbsp;&nbsp;int a, c;<br>      &nbsp;&nbsp;&nbsp;a = b / 333;<br>      &nbsp;&nbsp;&nbsp;c = pippo(a);<br>      &nbsp;&nbsp;&nbsp;return a + c;<br>  }</div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "1",
+        "optionC": "3",
+        "optionD": "0",
+        "optionE": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "<div class='code'>  int somma(int a, int b) {<br>      &nbsp;&nbsp;&nbsp;if (a == 0)<br>      &nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp; return b;<br>     &nbsp;&nbsp;&nbsp; return somma(a - 1, b + 1);<br>  }<br></div>  Funzione implementata dallo pseudo-codice",
+        "optionA": "Non usa ricorsione in coda",
+        "optionB": "Non può essere implementata per via iterativa",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "Causa sempre ricorsione infinita",
+        "optionE": "Usa ricorsione in coda",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "<div class='code'>  int f4(int x) {<br>      &nbsp;&nbsp;&nbsp;return 1 / x;<br>  }<br>  int f3(int a, int b) {<br>      &nbsp;&nbsp;&nbsp;if (a > 1)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return a;<br>     &nbsp;&nbsp;&nbsp; else<br>         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return b;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di f3(10,f4(0)) se i parametri sono passati per valore?",
+        "optionA": "10",
+        "optionB": "Non è possibile dirlo senza conoscere il tipo di scope (statico o dinamico) utilizzato",
+        "optionC": "Non è possibile passare f4(0) per valore",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "1",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "<div class='code'>  int i = 0;<br>  int x[10];<br>  int f2(int z) {<br>      &nbsp;&nbsp;&nbsp;i = i / 2;<br>      &nbsp;&nbsp;&nbsp;return z - i;<br>  }<br>  int f1(void) {<br>      &nbsp;&nbsp;&nbsp;int y;<br>      &nbsp;&nbsp;&nbsp;i = 4;<br>      &nbsp;&nbsp;&nbsp;x[0] = 1;<br>      &nbsp;&nbsp;&nbsp;x[1] = 0;<br>      &nbsp;&nbsp;&nbsp;x[2] = 2;<br>      &nbsp;&nbsp;&nbsp;x[3] = 4;<br>      &nbsp;&nbsp;&nbsp;x[4] = 6;<br>      &nbsp;&nbsp;&nbsp;y = f2(x[i]);<br>      &nbsp;&nbsp;&nbsp;return y + i;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di f1() se i parametri sono passati per valore?",
+        "optionA": "0",
+        "optionB": "2",
+        "optionC": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionD": "4",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "<div class='code'>  int x, y, z;<br>  void f3(void) {<br>     &nbsp;&nbsp;&nbsp; x = 0;<br>     &nbsp;&nbsp;&nbsp; y = 5;<br>  }<br>  void f2(void) {<br>     &nbsp;&nbsp;&nbsp; int y;<br>      &nbsp;&nbsp;&nbsp;f3();<br>     &nbsp;&nbsp;&nbsp; y = 0;<br>     &nbsp;&nbsp;&nbsp; z = 10;<br>  }<br>  int f1(void) {<br>     &nbsp;&nbsp;&nbsp; int x;<br>    &nbsp;&nbsp;&nbsp;  x = -5;<br>    &nbsp;&nbsp;&nbsp;  y = 10;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>    &nbsp;&nbsp;&nbsp;  f2();<br>    &nbsp;&nbsp;&nbsp;  return z - y - x;<br>  }</div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di f1(), assumendo scope dinamico?",
+        "optionA": "Non è possibile dirlo",
+        "optionB": "5",
+        "optionC": "0",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "-5",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "<div class='code'>  int b = 666;<br>  int pippo(int x) {<br>    &nbsp;&nbsp;&nbsp;  x = 666; b = 1;<br>     &nbsp;&nbsp;&nbsp; return x / 2;<br>  }<br>  int pluto(void) {<br>     &nbsp;&nbsp;&nbsp; int a, c;<br>     &nbsp;&nbsp;&nbsp; a = b / 333;<br>     &nbsp;&nbsp;&nbsp; c = pippo(a);<br>     &nbsp;&nbsp;&nbsp; return a + c;<br>  }</div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "666",
+        "optionC": "999",
+        "optionD": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionE": "333",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "<div class='code'>  int somma(int a, int b) {<br>    &nbsp;&nbsp;&nbsp;  if (a == 0) return b;<br>     &nbsp;&nbsp;&nbsp; return somma(a - 1, b) + 1;<br>  }</div>  Funzione implementata dallo pseudo-codice",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Non può essere implementata per via iterativa",
+        "optionC": "Causa sempre ricorsione infinita",
+        "optionD": "Usa ricorsione in coda",
+        "optionE": "Non usa ricorsione in coda",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "<div class='code'>  int b = 666;<br>  int pippo(int x) {<br>   &nbsp;&nbsp;&nbsp;   x = 666; b = 1;<br>    &nbsp;&nbsp;&nbsp;  return x / 2;<br>  }<br>  int pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int a, c;<br>   &nbsp;&nbsp;&nbsp;   a = b / 333;<br>     &nbsp;&nbsp;&nbsp; c = pippo(a);<br>    &nbsp;&nbsp;&nbsp;  return a + c;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per nome?",
+        "optionA": "Non è possibile passare a per nome",
+        "optionB": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "335",
+        "optionE": "999",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "<div class='code'>  int mistero(int a, int b) {<br>    &nbsp;&nbsp;&nbsp;  if (b == 0) return a;<br>   &nbsp;&nbsp;&nbsp;   return mistero(a / 2, b - 1);<br>  }<br></div>  La funzione implementata dallo pseudo-codice",
+        "optionA": "Può causare una crescita incontrollata dello stack",
+        "optionB": "Causa sempre ricorsione infinita",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "Non può essere implementata per via iterativa",
+        "optionE": "Non usa ricorsione in coda",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "<div class='code'>  int x, y;<br>  void pippo(void) {<br>   &nbsp;&nbsp;&nbsp;   x = 8;<br>    &nbsp;&nbsp;&nbsp;  y = 4;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int y;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>    &nbsp;&nbsp;&nbsp;  y = 3;<br>  }<br>  int topolino(void) {<br>    &nbsp;&nbsp;&nbsp;  int x, z;<br>    &nbsp;&nbsp;&nbsp;  x = 5;<br>   &nbsp;&nbsp;&nbsp;   y = 15;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>    &nbsp;&nbsp;&nbsp;  pluto();<br>    &nbsp;&nbsp;&nbsp;  return z - y - x;<br>  }</div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di topolino(), assumendo scope statico?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Non è possibile dirlo",
+        "optionC": "0",
+        "optionD": "-3",
+        "optionE": "11",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "<div class='code'>  int x, y, z;<br>  void f3(void) {<br>    &nbsp;&nbsp;&nbsp;  x = 0;<br>    &nbsp;&nbsp;&nbsp;  y = 5;<br>  }<br>  void f2(void) {<br>    &nbsp;&nbsp;&nbsp;  int y;<br>    &nbsp;&nbsp;&nbsp;  f3();<br>    &nbsp;&nbsp;&nbsp;  y = 0;<br>     &nbsp;&nbsp;&nbsp; z = 10;<br>  }<br>  int f1(void) {<br>    &nbsp;&nbsp;&nbsp;  int x;<br>   &nbsp;&nbsp;&nbsp;   x = -5;<br>    &nbsp;&nbsp;&nbsp;  y = 10;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>   &nbsp;&nbsp;&nbsp;   f2();<br>   &nbsp;&nbsp;&nbsp;   return z - y - x;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di f1(), assumendo scope dinamico?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "-1",
+        "optionC": "-5",
+        "optionD": "5",
+        "optionE": "Non è possibile dirlo",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "<div class='code'>  int c = 2;<br>  int pippo(int a) {<br>   &nbsp;&nbsp;&nbsp;   c = c + 2;<br>   &nbsp;&nbsp;&nbsp;   return a * 2;<br>  }<br>  int pluto(void) {<br>   &nbsp;&nbsp;&nbsp;   return(pippo(c + 1));<br>  }</div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionC": "Non è possibile passare c + 1 per valore",
+        "optionD": "6",
+        "optionE": "10",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "<div class='code'>  int r(int x) {<br>     &nbsp;&nbsp;&nbsp; return r(x - 1);<br>  }<br>  int f(int a, int b, int c) {<br>    &nbsp;&nbsp;&nbsp;  if (c == 1) return a; else return b;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di f(1,r(1),1) se i parametri sono passati per valore?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Si ha ricorsione infinita",
+        "optionC": "1",
+        "optionD": "Non è possibile dirlo senza conoscere il tipo di scope (statico o dinamico) utilizzato",
+        "optionE": "0",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "<div class='code'>  int x, y, z;<br>  void minni(void) {<br>   &nbsp;&nbsp;&nbsp;   x = 4;<br>   &nbsp;&nbsp;&nbsp;   y = 8;<br>  }<br>  void paperino(void) {<br>   &nbsp;&nbsp;&nbsp;   int y;<br>   &nbsp;&nbsp;&nbsp;   minni();<br>    &nbsp;&nbsp;&nbsp;  y = 1;<br>    &nbsp;&nbsp;&nbsp;  z = 666;<br>  }<br>  int topolino(void) {<br>   &nbsp;&nbsp;&nbsp;   int x;<br>    &nbsp;&nbsp;&nbsp;  x = 5;<br>    &nbsp;&nbsp;&nbsp;  y = 15;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>    &nbsp;&nbsp;&nbsp;  paperino();<br>    &nbsp;&nbsp;&nbsp;  return z - y - x;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di topolino(), assumendo scope statico?",
+        "optionA": "-3",
+        "optionB": "0",
+        "optionC": "14",
+        "optionD": "Non è possibile dirlo",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "<div class='code'>  int c = 2;<br>  int pippo(int a) {<br>    &nbsp;&nbsp;&nbsp;  c = c + 2;<br>     &nbsp;&nbsp;&nbsp; return a * 2;<br>  }<br>  int pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  return(pippo(c + 1));<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per riferimento?",
+        "optionA": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionB": "10",
+        "optionC": "Non è possibile passare c + 1 per riferimento",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "6",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "<div class='code'>  int a, b, c;<br>  void pippo(void) {<br>    &nbsp;&nbsp;&nbsp;  int a;<br>    &nbsp;&nbsp;&nbsp;  a = 6;<br>    &nbsp;&nbsp;&nbsp;  b = 5;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int c;<br>    &nbsp;&nbsp;&nbsp;  int b;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>     &nbsp;&nbsp;&nbsp; c = 3;<br>     &nbsp;&nbsp;&nbsp; a = 4;<br>  }<br>  void topolino(void) {<br>     &nbsp;&nbsp;&nbsp; int a;<br>    &nbsp;&nbsp;&nbsp;  a = 1;<br>    &nbsp;&nbsp;&nbsp;  b = 10;<br>     &nbsp;&nbsp;&nbsp; pluto();<br>     &nbsp;&nbsp;&nbsp; c = a + b;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope statico?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "6",
+        "optionC": "Non è possibile dirlo",
+        "optionD": "14",
+        "optionE": "3",
+        "optionF": "",
+        "correct": "optionB"
     }
 ]
