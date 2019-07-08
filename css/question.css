@@ -7,3 +7,8 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
 }
+
+.code {
+    font-family:'Courier New';
+    font-size:14px;
+}

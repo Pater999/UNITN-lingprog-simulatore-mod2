@@ -501,6 +501,236 @@
         "correct": "optionF"
     },
 	{
+        "question": "Beta f-riducendo (λd.((λa.abc)(bc)))(λy.xyz) si ottiene",
+        "optionA": "La riduzione non termina",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "λb.bba",
+        "optionD": "λa.abc",
+        "optionE": "bcbc",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Un interprete di un linguaggio L scritto in un linguaggio LO è",
+        "optionA": "Un programma che trasforma un programma PL (espresso nel linguaggio L) in un programma PLO (espresso nel linguaggio LO) tale che per ogni input I si ha PL(I) = PLO(I)",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Una implementazione di macchine astratte indipendente dalla macchina fisica",
+        "optionD": "Un programma scritto nel linguaggio L che dato un input I produce lo stesso output generato dallo stesso programma scritto nel linguaggio LO",
+        "optionE": "L’implementazione di una macchina astratta scritta nel linguaggio LO, che capisce programmi scritti nel linguaggio L",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "L’ambiente (o environment) è",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Un insieme di associazioni (nome, valore) definite staticamente durante lo sviluppo di un programma",
+        "optionC": "L’insieme delle associazioni (variabile, valore) esistenti in uno specifico punto del programma ed in uno specifico momento durante l’esecuzione di un programma",
+        "optionD": "L’insieme dei valori che una variabile assume durante l’esecuzione di un programma",
+        "optionE": "Una lista di coppie (nome, tipo) che permette di accedere alle variabili di un programma",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Se gli array sono memorizzati per righe ed int a[100][100] è un un array multidimensionale di interi (si assuma che la dimensione di un intero sia 4 byte) con a[0][0] che ha indirizzo 0x1000, qual è l’indirizzo di a[5][10]?",
+        "optionA": "0x100F",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "0x13ED",
+        "optionD": "0x11FE",
+        "optionE": "0x1510",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "Beta f-riducendo (λn.λf.λx.f((nf)x))(λf.λx.f(f(f(fx)))) si ottiene ",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "L’espressione è irriducibile",
+        "optionC": "La riduzione non termina",
+        "optionD": "λf.λx.fffffx",
+        "optionE": "fx",
+        "optionF": "λf.λx.f(f(f(f(fx))))",
+        "correct": "optionF"
+    },
+	{
+        "question": "Un garbage collector",
+        "optionA": "Richiede un’implementazione complessa, usando la tecnica dei tombstone (pietre tombali)",
+        "optionB": "E’ implementabile solo in linguaggi di programmazione funzionali",
+        "optionC": "Può essere implementato tramite la tecnica del reference counting (contatore dei riferimenti), che riesce sempre ad identificare tutta la memoria allocata dinamicamente ma non più utilizzata",
+        "optionD": "E’ implementabile tramite la tecnica di lucchetti e chiavi, che però può causare dei memory leak",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Se gli array sono memorizzati per righe e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 0x2000, qual è l’indirizzo di a[5][10]?",
+        "optionA": "0x200F",
+        "optionB": "0x21FE",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "0x23ED",
+        "optionE": "0x2510",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "Beta-riducendo (λn.λm.λf.λx.(nf)((mf)x))(λf.λx.fx)(λf.λx.x) si ottiene",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "x",
+        "optionC": "λf.λx.ffffffx",
+        "optionD": "λf.λx.fx",
+        "optionE": "fx",
+        "optionF": "λf.λx.ffffx",
+        "correct": "optionD"
+    },
+	{
+        "question": "Beta-riducendo (λa.((aλb.λc.c)λd.λe.d))(λf.λg.g) si ottiene",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "λb.λc.b",
+        "optionC": "b",
+        "optionD": "λb.λc.c",
+        "optionE": "La riduzione non termina",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "L’ambiente (o environment) è",
+        "optionA": "Un insieme di associazioni (nome, valore) definite staticamente durante lo sviluppo di un programma",
+        "optionB": "Una lista di coppie (nome, tipo) che permette di accedere alle variabili di un programma",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "L’insieme dei valori che una variabile assume durante l’esecuzione di un programma",
+        "optionE": "L’insieme delle associazioni (nome, oggetto denotabile) esistenti in uno specifico punto del programma ed in uno specifico momento durante l’esecuzione di un programma",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "In caso di scope dinamico",
+        "optionA": "Il valore assegnato ad una variabile non può essere modificato",
+        "optionB": "Non è possibile annidare più blocchi di istruzioni",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "I legami fra nomi ed oggetto possono essere determinati solo a tempo di esecuzione",
+        "optionE": "I legami fra nomi ed oggetto possono essere determinati semplicemente leggendo il testo di un programma",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "Beta-riducendo (λa.aab)((λa.aab)(λa.(λb.ba)c)) si ottiene",
+        "optionA": "La riduzione non termina",
+        "optionB": "aab",
+        "optionC": "λa.aab",
+        "optionD": "ccb(ccb)c",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Un entità denotabile è",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Un entità che può essere generata come risultato da un espressione complessa o da una Funzione",
+        "optionC": "Una generica entità a cui può essere dato un nome",
+        "optionD": "Un'entità che ancora non compare nell'ambiente",
+        "optionE": "Un'entità che può essere memorizzata",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "I puntatori di catena statica contenuti in un record di attivazione",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Servono per accedere alle variabili statiche",
+        "optionC": "Devono essere esplicitamente allocati e deallocati dal codice del programma che li usa",
+        "optionD": "Servono per identificare la zona di memoria in cui è memorizzata una variabile in caso di scope statico",
+        "optionE": "Non esistono puntatori di catena statica in un record d'attivazione",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "La memoria gestita dinamicamente",
+        "optionA": "E' usata solo in linguaggi interpretati",
+        "optionB": "Non è mai strettamente necessaria, ma permette di ottenere migliori prestazioni",
+        "optionC": "E' necessaria per implementare la ricorsione",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "E' necessaria per implementare l'iterazione",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "Se gli array sono memorizzati per colonne ed int a[100][100] è un array multidimensionale di interi (si assuma che la dimensione di un intero sia 4 byte) con a[0][0] che ha indirizzo 0x5000, qual è l'indirizzo di a[5][10]?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "0x53ED",
+        "optionC": "0x500F",
+        "optionD": "0x41FE",
+        "optionE": "0x5510",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Beta riducendo (λa.aab)((λa.aab)(λa.(λb.ba)c)) si ottiene",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "ccb(ccb)c",
+        "optionC": "λa.aab",
+        "optionD": "La riduzione non termina",
+        "optionE": "aab",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Beta-riducendo ((λa.aaa)(λb.b))(λc.c) si ottiene",
+        "optionA": "λc.c",
+        "optionB": "La riduzione non termina",
+        "optionC": "aaa",
+        "optionD": "λx.xa",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Beta-riducendo (λd.((λa.abc)(bc)))(λy.xyz) si ottiene",
+        "optionA": "La riduzione non termina",
+        "optionB": "bcbc",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "λa.abc",
+        "optionE": "λb.bba",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "Un entità denotabile può avere un tempo di vita più lungo di quello delle associazioni (fra l'entità ed identificatori) che lo riferiscono",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Se l'entità è allocata dinamicamente dallo heap in una subroutine",
+        "optionC": "Mai",
+        "optionD": "Se l'entità è allocata dinamicamente dallo stack in una subroutine",
+        "optionE": "Se si usa scope dinamico",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "La memoria gestita dinamicamente",
+        "optionA": "Non è mai strettamente necessaria, ma permette di ottenere migliori prestazioni",
+        "optionB": "E' necessaria per implementare l'iterazione",
+        "optionC": "E' usata solo in linguaggi interpretati",
+        "optionD": "E' necessaria solo per implementare macchine astratte per linguaggi compilati",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "I record d'attivazione",
+        "optionA": "Devono essere esplicitamente allocati e deallocati dal codice del programma che li usa",
+        "optionB": "Possono essere allocati sia sullo stack sia sullo heap (in caso, per esempio, di funzioni di ordine superiore)",
+        "optionC": "Sono necessari solo in presenza di funzioni di ordine superiore",
+        "optionD": "Solo allocati solo sullo heap",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "<div class='code'>int c = 2; <br> int pippo(int a) { <br>&nbsp;&nbsp;&nbsp;c = c + 2; <br>&nbsp;&nbsp;&nbsp;return a * 2; <br>} <br>int pluto(void) {<br>&nbsp;&nbsp;&nbsp;return pippo(c + 1); <br>}</div>Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per nome?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "10",
+        "optionC": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
+        "optionD": "4",
+        "optionE": "6",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
         "question": "",
         "optionA": "",
         "optionB": "",

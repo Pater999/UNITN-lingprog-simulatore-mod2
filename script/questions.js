@@ -19,7 +19,7 @@ function init() {
     if (tempo == undefined || nrdomande == undefined || random == undefined) {
         location.href = 'index.html';
     }
-    else if (!(random == "true") || (random == "false")) {
+    else if (!((random == "false") || (random == "true"))) {
         location.href = 'index.html';
     }
     else {
