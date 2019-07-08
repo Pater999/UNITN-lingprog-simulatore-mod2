@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/question.css" />
+
+    <title>Simulatore linguaggi</title>
+</head>
+<body onload="init()">
+
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Simulatore linguaggi</a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <button id="btnConsegna" type="button" onclick="consegnaClick()" class="btn btn-success">Consegna</button>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="barraTempo">
+        <div class="progress" style="margin-bottom: 20px">
+            <div class="progress-bar" role="progressbar" style="width:0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>'
+        </div>
+    </div>
+
+
+    <div  id="jumbotronRisposte" class="jumbotron jumbotron-fluid ">
+        <div class="container" style="height:400px">
+
+            <h5 id="domanda" style="margin-bottom:20px">Questo è uno esempio di domanda?</h5>
+            <div id="varieopzioni"></div>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+    </div>
+
+
+    <div class="modal fade" id="modalRisultati" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Risultati</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" >
+                    <div class="container-fluid">
+                        <div class="row" >
+                            <div class="col-lg-12" id="result"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='/index.html'">Torna al menu</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Vedi le risposte</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="script/questions.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,513 @@
+[
+    {
+        "question": "Beta-riducendo (λn.λm.λf.λx.(nf)((mf)x))(λf.λx.ffffx)(λf.λx.fx) si ottiene",
+        "optionA": "λf.λx.ffffx",
+        "optionB": "f",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "λf.λx.ffffffx",
+        "optionE": "x",
+        "optionF": "λf.λx.fffffx",
+        "correct": "optionF"
+    },
+    {
+        "question": "La ricorsione in coda",
+        "optionA": "Non è implementabile nei linguaggi imperativi",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Richiede di non scrivere mai la chiamata ricorsiva come ultimo statement di una subroutine",
+        "optionD": "Richiede di non ritornare mai direttamente il valore ritornato da una chiamata ricorsiva",
+        "optionE": "Permette di risolvere il problema della ricorsione infinita",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Se gli array sono memorizzati per righe e int a[100][100] è un array multidimensionale di interi (si assuma che la dimensione di un intero sia 4 byte) con a[0][0] che ha indirizzo 0x5000, qual è l'indirizzo di a [5][10]?",
+        "optionA": "0x57F8",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "0x53ED",
+        "optionD": "0x5510",
+        "optionE": "0x51FE",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Beta-riducendo (λn.λm.λf.λx.(nf)((mf)x))(λf.λx.fx)(λf.λx.x) si ottiene",
+        "optionA": "λf.λx.f(f(f(fx)))",
+        "optionB": "λf.λx.fx",
+        "optionC": "x",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "fx",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "I record di attivazione",
+        "optionA": "Sono necessari solo in presenza di funzioni di ordine superiore",
+        "optionB": "Sono allocati dinamicamente solo in caso di scope dinamico",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "Devono essere esplicitamente allocati e deallocati dal codice del programma che li usa",
+        "optionE": "Sono allocati solo nello heap",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Si può dire che una macchina astratta che capisce il linguaggio C non sia implementata in modo puramente compilativo perché",
+        "optionA": "Gli eseguibili generati da un compilatore C in genere non eseguono direttamente sulla macchina hardware, ma su una macchina astratta che include il runtime del linguaggio e le funzionalità del Sistema Operativo",
+        "optionB": "Gli eseguibili generati dal compilatore vengono comunque interpretati da una macchina virtuale",
+        "optionC": "Una macchina astratta che capisca un linguaggio di alto livello come il C non è mai implementabile con un compilatore",
+        "optionD": "Il runtime del linguaggio C è comunque sempre interpretato",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Il costrutto for dei linguaggi C, C++ e Java",
+        "optionA": "Non è un costrutto di iterazione determinata",
+        "optionB": "E' necessario a tali linguaggi per implementare qualsiasi tipo di algoritmo",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "E' un costrutto di iterazione determinata",
+        "optionE": "Permette di sapere in anticipo quante volte il ciclo verrà ripetuto (indipendentemente dal corpo del ciclo)",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Un'entità esprimibile è",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Un'entità che può essere generata come risultato da un'espressione complessa o da una funzione",
+        "optionC": "Un'entità che ancora non compare nell'ambiente",
+        "optionD": "Un'entità che può essere memorizzata",
+        "optionE": "Una generica entità a cui può essere dato un nome",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "In assenza di ambiente non locale",
+        "optionA": "Per implementare funzioni definite ricorsivamente è necessario utilizzare un fixed point combinator",
+        "optionB": "Non si possono implementare algoritmi ricorsivi",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "Non si possono implementare algoritmi iterativi o ricorsivi",
+        "optionE": "Non si possono implementare algoritmi iterativi",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "I puntatori di catena dinamica contenuti in un record di attivazione",
+        "optionA": "Collegano una lista di zone di memoria gestita dinamicamente",
+        "optionB": "Servono per accedere alle variabili dinamiche",
+        "optionC": "Non esistono “puntatori di catena dinamica” in un record di attivazione",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "Permettono, a partire da un RdA, di trovare il RdA precedente sullo stack",
+        "optionF": "",
+        "correct": "optionE"
+    },
+    {
+        "question": "In presenza di variabili modificabili",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Esistono un Ambiente che associa valori denotabili (fra cui le locazioni di memoria) a nomi ed una Memoria che associa locazioni di memoria a valori memorizzabili",
+        "optionC": "Non esistono valori denotabili",
+        "optionD": "La valutazione del comando di assegnamento restituisce sempre un valore",
+        "optionE": "Il comando di assegnamento non ha effetti collaterali",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Se gli array sono memorizzati per colonne ed int a[100][100] è un array multidimensionale di interi (si assuma che la dimensione di un intero sia 4 byte)con a[0][0] che ha indirizzo 0x5000, qual è l'indirizzo di a[5][10]?",
+        "optionA": "0x5510",
+        "optionB": "0x53ED",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "0x500F",
+        "optionE": "0x41FE",
+        "optionF": "",
+        "correct": "optionC"
+    },
+
+    {
+        "question": "Il concetto di variabile modificabile",
+        "optionA": "E' l'unico concetto utilizzabile quando si parla di variabili",
+        "optionB": "E' imposto dall'architettura di Von Neumann (variabili non modificabili richiederebbero macchine astratte caratterizzate da memoria a sola lettura)",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "E' tipico del paradigma di programmazione imperativo",
+        "optionE": "Permette di evitare il fenomeno dell'aliasing",
+        "optionF": "",
+        "correct": "optionD"
+    },
+    {
+        "question": "Nella sostituzione (λa.abc)[arrg/c]",
+        "optionA": "E’ necessario applicare una Alfa-equivalenza per evitare una cattura di variabile",
+        "optionB": "Viene catturata la variabile c",
+        "optionC": "Si rischia di catturare la variabile “a” ed è necessario applicare Beta-equivalenza per risolvere in problema",
+        "optionD": "Non c’è alcuna cattura di variabile",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Beta-riducendo (λn.λf.λx.f((nf)x))(λf.λx.f(f(f(fx)))) si ottiene",
+        "optionA": "La riduzione non termina",
+        "optionB": "fx",
+        "optionC": "λf.λx.fffffx",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "λf.λx.f(f(f(fx))))",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Il fenomeno della cattura di variabili",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Non può essere evitato in alcun modo",
+        "optionC": "Fa si che dopo una sostituzione una variabile libera diventi legata (per esempio da un’astrazione λx.)",
+        "optionD": "Comporta la “sparizione” di variabili libere durante un’astrazione funzione",
+        "optionE": "E’ dovuto all’assenza di un ambiente non locale",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Una Macchina Astratta ML (LO) è",
+        "optionA": "E’ un modo per descrivere un interprete",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "E’ implementabile solo basandosi sull’architettura di Von Neumann",
+        "optionD": "E’ un modo per descrivere un compilatore",
+        "optionE": "E’ associata ad un proprio linguaggio macchina L, che è in grado di capire ed eseguire",
+        "optionF": "",
+        "correct": "optionE"
+    },
+    {
+        "question": "Se gli array sono memorizzati per righe e char a[100][100][100] è un un array multidimensionale di caratteri con a[0][0] che ha indirizzo 0x1000, qual è l’indirizzo di a[5][5][10]?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "0x51510",
+        "optionC": "0xC54E",
+        "optionD": "0xD54E",
+        "optionE": "0x50510",
+        "optionF": "",
+        "correct": "optionD"
+    },
+    {
+        "question": "Il passaggio di parametri per nome",
+        "optionA": "Permette di passare valori solo dal chiamante al chiamato (e non viceversa)",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "E’ implementabile passando una chiusura come parametro",
+        "optionD": "Ha un valore solo teorico e non è implementabile in pratica",
+        "optionE": "Permette la cattura di variabili libere in modo da effetti non deterministici",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "La tecnica del display",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Permette di implementare facilmente lo scope dinamico",
+        "optionC": "Permette di ridurre il costo derivante dalla scansione della catena statica quando di implementa lo scope statico",
+        "optionD": "Permette di visualizzare le zone di memoria allocata dinamicamente",
+        "optionE": "Permette di implementare le regole di scope statico senza generare frammentazione della memoria",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Se gli array sono memorizzati per colonne e char a[100][100][100] è un un array multidimensionale di caratteri con a[0][0] che ha indirizzo 0x1000, qual è l’indirizzo di a[5][5][10]?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "0x18899",
+        "optionC": "0x51510",
+        "optionD": "0xD54E",
+        "optionE": "0x19899",
+        "optionF": "",
+        "correct": "optionE"
+    },
+    {
+        "question": "Un compilatore da un linguaggio L ad un linguaggio LO è",
+        "optionA": "Un programma che trasforma un programma PL (espresso nel linguaggio L) in un programma PLO (espresso nel linguaggio LO) tale che per ogni input I si ha PL(I) = PLO(I)",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Un programma scritto nel linguaggio LO che riceve come ingresso un programma PL (espresso nel linguaggio L) ed il suo input I generando lo stesso output che genera PL con input I",
+        "optionD": "L’implementazione di una macchina astratta scritta nel linguaggio LO, che capisce programmi scritti nel linguaggio L",
+        "optionE": "Una implementazione di macchine astratte indipendente dalla macchina fisica",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Il costrutto for dei linguaggi C, C++ e Java non è un costrutto di iterazione determinata perchè",
+        "optionA": "L’esistenza di costrutti di iterazione derminata implicherebbe che C, C++ e Java non sono Turing-completi",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Dall’interno del ciclo è possibile modificare il valore del contatore",
+        "optionD": "Non esistono costrutti di iterazione determinata",
+        "optionE": "C, C++ e Java sono linguaggi imperativi",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Un oggetto denotabile (intendendo per “oggetto” una generica entità che può essere una variabile, una funzione, etc...) è",
+        "optionA": "Un “oggetto” che può essere memorizzato in una variabile",
+        "optionB": "Un “oggetto” per cui compare un binding nell’ambiente",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "Un “oggetto” che ancora non compare nell’ambiente",
+        "optionE": "Un “oggetto” che può essere generato come risultato da un’espressione complessa o da una funzione",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "L’ambiente non locale di un blocco di codice è",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "L’insieme dei valori che le variabili non locali possono assumere",
+        "optionC": "L’insieme dei binding creati all’interno del blocco di codice",
+        "optionD": "L’insieme dei binding visibili dentro al blocco, ma non direttamente definiti in esso",
+        "optionE": "Il subset dell’ambiente non visibile dentro al blocco di codice",
+        "optionF": "",
+        "correct": "optionD"
+    },
+    {
+        "question": "Se gli array sono memorizzati per colonne e int a[25][25] è un un array multidimensionale di interi (si assuma che un intero sia memorizzato in 4 byte) con a[0][0] che ha indirizzo 0x1000, qual è l’indirizzo di a[5][10]?",
+        "optionA": "0x11FE",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "0x100F",
+        "optionD": "0x13FC",
+        "optionE": "0x121C",
+        "optionF": "",
+        "correct": "optionD"
+    },
+    {
+        "question": "Beta-riducendo (λa.((aλb.λc.c)λd.λe.d))(λf.λg.f) si ottiene",
+        "optionA": "λb.λc.c",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "La riduzione non termina",
+        "optionD": "c",
+        "optionE": "λb.λc.b",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "I puntatori di catena dinamica contenuti in un record di attivazione",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Non esistono \"puntatori di catena dinamica\" in un record di attivazione",
+        "optionC": "Servono per identificare la zona di memoria in cui è memorizzata una variabile locale",
+        "optionD": "Devono essere esplicitamente allocati e deallocati dal codice del programma che li usa",
+        "optionE": "Servono per accedere alle variabili dinamiche",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Beta-riducendo (λx.xy)(λz.zx)(λz.zx) si ottiene",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "xyz",
+        "optionC": "(λx.xy)yx",
+        "optionD": "yx(λz.zx)",
+        "optionE": "La riduzione non termina",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "L’allocazione dinamica della memoria",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "E’ sempre effettuata solo dal compilatore o dall’interprete",
+        "optionC": "Può essere fatta solo dallo heap",
+        "optionD": "Può essere fatta solo dallo stack",
+        "optionE": "Può essere fatta sia dallo stack che dallo heap",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Un compilatore da un linguaggio L ad un linguaggio LO è",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Una implementazione di macchine astratte indipendente dalla macchina fisica",
+        "optionC": "Un programma che trasforma un programma PLO (espresso nel linguaggio LO) in un programma PL (espresso nel linguaggio L) tale che per ogni input I si ha PL(I) = PLO(I)",
+        "optionD": "L'implementazione di una macchina astratta scritta nel linguaggio LO, che capisce programmi scritti nel linguaggio L",
+        "optionE": "Un programma scritto nel linguaggio LO che riceve come ingresso un programma PL (espresso nel linguaggio L) ed il suo input I generando lo stesso output che genera PL con input I",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "I dangling pointer",
+        "optionA": "Sono identificabili tramite tecniche di reference counting (contatore dei riferimenti)",
+        "optionB": "Sono un problema solo per il linguaggio Java",
+        "optionC": "Sono identificabili tramite la tecnica detta \"mark and sweep\"",
+        "optionD": "Non possono essere identificati con certezza, ma questo non è un problema perché comportano solo un piccolo spreco di memoria",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "La frammentazione esterna causa",
+        "optionA": "Uno spreco di memoria",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "L'impossibilità di allocare grandi blocchi di memoria anche se la memoria libera totale è suffciente",
+        "optionD": "Un rallentamento rilevante nelle operazioni di allocazione della memoria",
+        "optionE": "Il funzionamento non corretto di programmi che allocano memoria dinamicamente",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "La valutazione con corto circuito del predicato \"A && B\" (dove \"&&\" rappresenta un \"AND\" logico)",
+        "optionA": "Stabilisce che se \"B\" è vero allora \"A\" non viene valutato",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Stabilisce che se \"A\" è falso allora \"B\" non viene valutato",
+        "optionD": "Crea un non-determinismo nell'ordine della valutazione di \"A\" e \"B\"",
+        "optionE": "Stabilisce che \"A\" e \"B\" devono essere valutati in parallelo",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "Se l'ambiente di una funzione non contiene il nome della funzione stessa",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "Non è possibile per la funzione invocarsi ricorsivamente",
+        "optionC": "Non ci sono particolari conseguenze",
+        "optionD": "La funzione non può usare scope dinamico",
+        "optionE": "La funzione non può usare scope statico",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "Se gli array sono memorizzati per colonne ed short int a[100][100] è un array multidimensionale di interi corti (si assuma che la dimensione di uno short int sia 2 byte) con a[0][0] che ha indirizzo 0x4100, qual è l'indirizzo di a[5][10]?",
+        "optionA": "0x48DA",
+        "optionB": "0x4510",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "0x47DA",
+        "optionE": "0x41FE",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "La frammentazione interna causa",
+        "optionA": "Il funzionamento non corretto di programmi che allocano memoria dinamicamente",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "Un rallentamento rilevante nelle operazioni di allocazione della memoria",
+        "optionD": "Uno spreco di memoria",
+        "optionE": "L'impossibilità di allocare grandi blocchi di memoria anche se la memoria libera totale è suffciente",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "L'allocazione dinamica della memoria",
+        "optionA": "Può essere fatta sia dallo stack che dallo heap",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "E' sempre effettuata solo dal compilatore o dall'interprete",
+        "optionD": "Può essere fatta solo dallo stack",
+        "optionE": "Può essere fatta solo dallo heap",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Beta-riducendo (λn.λf.λx.f((nf)x))(λf.λx.ffffx) si ottiene",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "λf.λx.ffffffx",
+        "optionC": "La riduzione non termina",
+        "optionD": "λf.λx.fffffx",
+        "optionE": "fx",
+        "optionF": "L’espressione è irriducibile",
+        "correct": "optionD"
+    },
+	{
+        "question": "Beta f-riducendo ((λa.aaa)(λb.b))(λc.c) si ottiene",
+        "optionA": "La riduzione non termina",
+        "optionB": "aaa",
+        "optionC": "λx.xa",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "λc.c",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "L'ambiente (o environment) è",
+        "optionA": "L'insieme delle associazioni (nome, entità denotabile) esistenti in uno specifico punto del programma ed in uno specifico momento durante l'esecuzione di un programma",
+        "optionB": "L'insieme dei valori che una variabile assume durante l'esecuzione di un programma",
+        "optionC": "Un insieme di associazioni (nome, valore) definite staticamente durante lo sviluppo di un programma",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "Una lista di coppie (nome, tipo) che permette di accedere alle variabili di un programma",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Beta f-riducendo (λa.aaa)((λb.b)(λc.c)) si ottiene",
+        "optionA": "λa.a",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "aaa",
+        "optionD": "La riduzione non termina",
+        "optionE": "λx.xa",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Si può dire che una macchina astratta che capisce il linguaggio Java non sia implementata in modo puramente compilativo perché",
+        "optionA": "Non esistendo un vero e proprio runtime per Java, non si può parlare di compilazione pura",
+        "optionB": "La macchina virtuale di Java (JVM) deve comunque essere compilata",
+        "optionC": "Una macchina astratta che capisca un linguaggio di alto livello come Java non è mai implementabile con un compilatore",
+        "optionD": "Non esistono compilatori Java",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "La ricorsione in coda",
+        "optionA": "Permette di risolvere il problema della ricorsione infinita",
+        "optionB": "Richiede di non scrivere mai la chiamata ricorsiva come ultimo statement di una subroutine",
+        "optionC": "Richiede di non ritornare mai direttamente il valore ritornato da una chiamata ricorsiva",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "Permette di evitare un'eccessiva crescita della dimensione dello stack",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "La memoria gestita staticamente",
+        "optionA": "E’ allocata esplicitamente dal programma a tempo di esecuzione, ma una volta allocata è staticamente legata al programma e non può essere liberata fino alla sua terminazione",
+        "optionB": "E’ allocata prima dell’esecuzione del programma. Le entità allocate staticamente possono essere deallocate durante l’esecuzione del programma, per liberare memoria",
+        "optionC": "E’ allocata dal compilatore prima dell’esecuzione del programma. Le entità allocate staticamente in memoria risiedono in una zona fissa di memoria durante tutta l’esecuzione del programma",
+        "optionD": "E’ una memoria a sola lettura",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "Se gli array sono memorizzati per colonne e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 0x1100, qual è l'indirizzo di a[5][10]?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "0x24ED",
+        "optionC": "0x21FE",
+        "optionD": "0x22FE",
+        "optionE": "0x14ED",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Un interprete di un linguaggio L scritto in un linguaggio LO è",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "L'implementazione di una macchina astratta scritta nel linguaggio LO, che capisce programmi scritti nel linguaggio L",
+        "optionC": "Una implementazione di macchine astratte indipendente dalla macchina fisica",
+        "optionD": "Un programma scritto nel linguaggio LO che riceve come ingresso un programma PL (espresso nel linguaggio L) ed il suo input I generando lo stesso output che genera PL con input I",
+        "optionE": "Un programma che trasforma un programma PL (espresso nel linguaggio L) in un programma PLO (espresso nel linguaggio LO) tale che per ogni input I si ha PL(I) = PLO(I)",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "In caso di scope statico",
+        "optionA": "Non è possibile annidare più blocchi di istruzioni",
+        "optionB": "I legami fra nomi ed oggetto possono essere determinati solo a tempo di esecuzione",
+        "optionC": "Il valore assegnato ad una variabile non può essere modificato",
+        "optionD": "I legami fra nomi ed oggetto possono essere determinati semplicemente leggendo il testo di un programma",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "Un garbage collector",
+        "optionA": "Può essere implementato tramite la tecnica detta “mark and sweep”, che riesce sempre ad identificare tutta la memoria allocata dinamicamente ma non più utilizzata",
+        "optionB": "Richiede un’implementazione complessa, usando la tecnica dei tombstone (pietre tombali)",
+        "optionC": "E’ implementabile solo in linguaggi di programmazione funzionali",
+        "optionD": "E’ implementabile tramite la tecnica di lucchetti e chiavi, che però può causare dei memory leak",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Se gli array sono memorizzati per colonne ed short int a[100][100] è un array multidimensionale di interi corti (si assuma che la dimensione di uno short int sia 2 byte) con a[0][0] che ha indirizzo 0x4100, qual è l’indirizzo di a[5][10]?",
+        "optionA": "0x41FE",
+        "optionB": "0x500F",
+        "optionC": "0x47DA",
+        "optionD": "0x4510",
+        "optionE": "0x43ED",
+        "optionF": "Nessuna delle altre risposte",
+        "correct": "optionF"
+    },
+	{
+        "question": "",
+        "optionA": "",
+        "optionB": "",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "option"
+    }
+]
