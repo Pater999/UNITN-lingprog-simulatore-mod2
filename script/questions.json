@@ -921,7 +921,7 @@
         "correct": "optionC"
     },
 	{
-        "question": "  int a, b, c;<br>  void pippo(void) {<br>    &nbsp;&nbsp;&nbsp;  int a;<br>    &nbsp;&nbsp;&nbsp;  a = 6;<br>    &nbsp;&nbsp;&nbsp;  b = 5;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int c;<br>    &nbsp;&nbsp;&nbsp;  int b;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>     &nbsp;&nbsp;&nbsp; c = 3;<br>     &nbsp;&nbsp;&nbsp; a = 4;<br>  }<br>  void topolino(void) {<br>     &nbsp;&nbsp;&nbsp; int a;<br>    &nbsp;&nbsp;&nbsp;  a = 1;<br>    &nbsp;&nbsp;&nbsp;  b = 10;<br>     &nbsp;&nbsp;&nbsp; pluto();<br>     &nbsp;&nbsp;&nbsp; c = a + b;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope statico?",
+        "question": "<div class='code'>  int a, b, c;<br>  void pippo(void) {<br>    &nbsp;&nbsp;&nbsp;  int a;<br>    &nbsp;&nbsp;&nbsp;  a = 6;<br>    &nbsp;&nbsp;&nbsp;  b = 5;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int c;<br>    &nbsp;&nbsp;&nbsp;  int b;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>     &nbsp;&nbsp;&nbsp; c = 3;<br>     &nbsp;&nbsp;&nbsp; a = 4;<br>  }<br>  void topolino(void) {<br>     &nbsp;&nbsp;&nbsp; int a;<br>    &nbsp;&nbsp;&nbsp;  a = 1;<br>    &nbsp;&nbsp;&nbsp;  b = 10;<br>     &nbsp;&nbsp;&nbsp; pluto();<br>     &nbsp;&nbsp;&nbsp; c = a + b;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope statico?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "6",
         "optionC": "Non è possibile dirlo",
