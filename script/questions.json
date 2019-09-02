@@ -1059,6 +1059,26 @@
         "optionE": "fn: 'a -> 'a -> bool",
         "optionF": "",
         "correct": "optionA"
+    },
+	{
+        "question": "Quale delle seguenti affermazioni riguardanti il garbage collector è falsa",
+        "optionA": "Per Garbage Collection si intende una modalità automatica di gestione della memoria",
+        "optionB": "L’utente alloca liberamente memoria",
+        "optionC": "Non è permesso deallocare memoria",
+        "optionD": "Il sistema periodicamente recupera la memoria allocata e non più utilizzabile",
+        "optionE": "Un sistema operativo, o un compilatore, e un modulo di run-time liberano porzioni di memoria non più utilizzate dalle applicazioni.",
+        "optionF": "Tutte sono corrette",
+        "correct": "optionF"
+    },
+	{
+        "question": "Quale delle seguenti affermazioni riguardanti il Garbage Collector è falsa",
+        "optionA": "Il garbage collector annoterà le aree di memoria non più referenziate e le libererà automaticamente",
+        "optionB": "L’utente alloca liberamente memoria",
+        "optionC": "E' permesso deallocare memoria",
+        "optionD": "Tutte le opzioni sono corrette",
+        "optionE": "Il sistema periodicamente recupera la memoria allocata e non più utilizzabile",
+        "optionF": "",
+        "correct": "optionC"
     }
 	
 ]
