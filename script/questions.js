@@ -15,11 +15,12 @@ function init() {
 	tempo = getParameterByName('tempo');
 	nrdomande = getParameterByName('nrdomande');
     random = getParameterByName('random');
+	mescola = getParameterByName('mescola');
 
-    if (tempo == undefined || nrdomande == undefined || random == undefined) {
+    if (tempo == undefined || nrdomande == undefined || random == undefined || mescola == undefined) {
         location.href = 'index.html';
     }
-    else if (!((random == "false") || (random == "true"))) {
+    else if ((!((random == "false") || (random == "true"))) || (!((mescola == "false") || (mescola == "true")))) {
         location.href = 'index.html';
     }
     else {
@@ -72,79 +73,117 @@ function init() {
     }
 }
 
+function mescolaRisposte(ordine, n, num) {
+    var str = "";
+    switch (ordine) {
+        case 0:
+            str += '<div class="form-check">'
+            if (risposteDate[num] == "optionA") {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionA" checked="checked">'
+            }
+            else {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionA">'
+            }
+            str += '<label class="form-check-label" for="optionA">'
+            str += domande[n].optionA;
+            str += '</label>'
+            str += '</div>'
+            break;
+        case 1:
+            str += '<div class="form-check">'
+            if (risposteDate[num] == "optionB") {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionB" checked="checked">'
+            }
+            else {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionB">'
+            }
+            str += '<label class="form-check-label" for="optionB">'
+            str += domande[n].optionB;
+            str += '</label>'
+            str += '</div>'
+            break;
+        case 2:
+            str += '<div class="form-check">'
+            if (risposteDate[num] == "optionC") {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionC" checked="checked">'
+            }
+            else {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionC">'
+            }
+            str += '<label class="form-check-label" for="optionC">'
+            str += domande[n].optionC;
+            str += '</label>'
+            str += '</div>'
+            break;
+        case 3:
+            str += '<div class="form-check">'
+            if (risposteDate[num] == "optionD") {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" id="optionD" onclick="handleClick(this)" checked="checked">'
+            }
+            else {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionD">'
+            }
+            str += '<label class="form-check-label" for="optionD">'
+            str += domande[n].optionD;
+            str += '</label>'
+            str += '</div>'
+            break;
+        case 4:
+            str += '<div class="form-check">'
+            if (risposteDate[num] == "optionE") {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionE" checked="checked">'
+            }
+            else {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionE">'
+            }
+            str += '<label class="form-check-label" for="optionE">'
+            str += domande[n].optionE;
+            str += '</label>'
+            str += '</div>'
+            break;
+        case 5:
+            str += '<div class="form-check">'
+            if (risposteDate[num] == "optionF") {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" id="optionF" onclick="handleClick(this)" checked="checked">'
+            }
+            else {
+                str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionF">'
+            }
+            str += '<label class="form-check-label" for="optionF">'
+            str += domande[n].optionF;
+            str += '</label>'
+            str += '</div>'
+            break;
+    }
+    return str;
+}
+
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+}
+
 function caricaDomanda(num) {
 	var numerodomanda = num + 1;
 	numDomandaCorrente = num;
 	var n = domandeProposte[num];
-	var str = "";
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionA") {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionA" checked="checked">'
+    
+    randomOrder = [0, 1, 2, 3, 4];
+    if (domande[n].optionF != "") {
+        randomOrder.push(5);
     }
-    else {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionA">'
+    if (mescola == "true") {
+        shuffleArray(randomOrder);
     }
-	str += '<label class="form-check-label" for="optionA">'
-	str += domande[n].optionA;		
-	str += '</label>'
-	str += '</div>'
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionB") {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionB" checked="checked">'
+    
+    str = "";
+    for (i = 0; i < randomOrder.length; i++) {
+        str += mescolaRisposte(randomOrder[i], n, num);
     }
-    else {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionB">'
-    }
-	str += '<label class="form-check-label" for="optionB">'
-	str += domande[n].optionB;
-	str += '</label>'
-	str += '</div>'
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionC") {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionC" checked="checked">'
-    }
-    else {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionC">'
-    }
-	str += '<label class="form-check-label" for="optionC">'
-	str += domande[n].optionC;
-	str += '</label>'
-	str += '</div>'
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionD") {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" id="optionD" onclick="handleClick(this)" checked="checked">'
-    }
-    else {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionD">'
-    }
-	str += '<label class="form-check-label" for="optionD">'
-	str += domande[n].optionD;
-	str += '</label>'
-	str += '</div>'
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionE") {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionE" checked="checked">'
-    }
-    else {
-        str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionE">'
-    }
-	str += '<label class="form-check-label" for="optionE">'
-	str += domande[n].optionE;
-	str += '</label>'
-	str += '</div>'
-	if (domande[n].optionF != "") {
-        str += '<div class="form-check">'
-        if (risposteDate[num] == "optionF") {
-            str += '<input class="form-check-input" type="radio" name="exampleRadios" id="optionF" onclick="handleClick(this)" checked="checked">'
-        }
-        else {
-            str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionF">'
-        }
-		str += '<label class="form-check-label" for="optionF">'
-		str += domande[n].optionF;
-		str += '</label>'
-		str += '</div>'
-	}
 	$(varieopzioni).html(str);
 	str2 = numerodomanda + ". " + domande[n].question;
     $(domanda).html(str2);
