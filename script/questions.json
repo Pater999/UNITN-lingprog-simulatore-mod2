@@ -57,7 +57,7 @@
         "optionD": "Il runtime del linguaggio C è comunque sempre interpretato",
         "optionE": "Nessuna delle altre risposte",
         "optionF": "",
-        "correct": "optionA"
+        "correct": "optionE"
     },
     {
         "question": "Il costrutto for dei linguaggi C, C++ e Java",
@@ -921,7 +921,7 @@
         "correct": "optionC"
     },
 	{
-        "question": "<div class='code'>  int a, b, c;<br>  void pippo(void) {<br>    &nbsp;&nbsp;&nbsp;  int a;<br>    &nbsp;&nbsp;&nbsp;  a = 6;<br>    &nbsp;&nbsp;&nbsp;  b = 5;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int c;<br>    &nbsp;&nbsp;&nbsp;  int b;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>     &nbsp;&nbsp;&nbsp; c = 3;<br>     &nbsp;&nbsp;&nbsp; a = 4;<br>  }<br>  void topolino(void) {<br>     &nbsp;&nbsp;&nbsp; int a;<br>    &nbsp;&nbsp;&nbsp;  a = 1;<br>    &nbsp;&nbsp;&nbsp;  b = 10;<br>     &nbsp;&nbsp;&nbsp; pluto();<br>     &nbsp;&nbsp;&nbsp; c = a + b;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope statico?",
+        "question": "  int a, b, c;<br>  void pippo(void) {<br>    &nbsp;&nbsp;&nbsp;  int a;<br>    &nbsp;&nbsp;&nbsp;  a = 6;<br>    &nbsp;&nbsp;&nbsp;  b = 5;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int c;<br>    &nbsp;&nbsp;&nbsp;  int b;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>     &nbsp;&nbsp;&nbsp; c = 3;<br>     &nbsp;&nbsp;&nbsp; a = 4;<br>  }<br>  void topolino(void) {<br>     &nbsp;&nbsp;&nbsp; int a;<br>    &nbsp;&nbsp;&nbsp;  a = 1;<br>    &nbsp;&nbsp;&nbsp;  b = 10;<br>     &nbsp;&nbsp;&nbsp; pluto();<br>     &nbsp;&nbsp;&nbsp; c = a + b;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope statico?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "6",
         "optionC": "Non è possibile dirlo",
@@ -929,5 +929,136 @@
         "optionE": "3",
         "optionF": "",
         "correct": "optionB"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun x y -> x y;</div>",
+        "optionA": "fun: 'a->'b",
+        "optionB": "fun: 'a->'b->string->string",
+        "optionC": "fun: ('a->'b)->'a->'b",
+        "optionD": "fun: int->int",
+        "optionE": "fun: string->string->string->string",
+        "optionF": "",
+        "correct": "optionC"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>List.map print string;</div>",
+        "optionA": "fun : string list -> string list",
+        "optionB": "fun : string list -> unit list",
+        "optionC": "fun : string list -> string",
+        "optionD": "fun : string -> string list",
+        "optionE": "fun: string -> unit",
+        "optionF": "fun: 'a list -> 'b list",
+        "correct": "optionB"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>let f1 l = List.map (fun x y -> x,y) l;</div>",
+        "optionA": "f1:'a list->('b -> 'a -> 'b) list",
+        "optionB": "f1:'a list-> 'b -> ('a * 'b)",
+        "optionC": "fun x y -> x,y :'a -> 'b -> 'a * 'b",
+        "optionD": "fun x y -> x,y :'a -> 'b -> 'a -> 'b",
+        "optionE": "f1:'a list->('b -> 'a * 'b) list",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>(fun f x = x) 12;</div>",
+        "optionA": "12: int",
+        "optionB": "'a: 12",
+        "optionC": "string: \"12\"",
+        "optionD": "fn: 'a -> 'a",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun f1 x = [x,x];</div>",
+        "optionA": "f1 = fn: 'a list -> 'a list",
+        "optionB": "f1 = fn: 'a list -> 'b list",
+        "optionC": "f1 = fn: 'a -> 'b",
+        "optionD": "f1 = fn: 'a -> 'a list",
+        "optionE": "f1 = fn: 'a -> 'a",
+        "optionF": "f1 = fn: string -> string",
+        "correct": "optionD"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun f2 x y = (x @ (y x));</div>",
+        "optionA": "fun: 'a -> 'a -> 'a -> 'a",
+        "optionB": "fun: 'a list -> ('a list -> 'a list) -> 'a list",
+        "optionC": "fun: 'a list -> 'a list -> 'a list",
+        "optionD": "fun: 'a list -> 'a list -> 'b list",
+        "optionE": "fun: 'a -> ('a list -> 'a list) -> 'a list",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun f3 x = List.map x;</div>",
+        "optionA": "fun : ('a list -> 'b list) -> 'a list -> 'b list",
+        "optionB": "fun : ('a -> 'b) -> 'a -> 'b",
+        "optionC": "fun : ('a -> 'a) -> 'a list -> 'a list",
+        "optionD": "fun : 'a list -> 'b list",
+        "optionE": "fun : ('a -> 'b) -> 'a list -> 'b list",
+        "optionF": "",
+        "correct": "optionE"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn x => fn y => x+y;</div>",
+        "optionA": "fn: int -> int",
+        "optionB": "fn: 'a -> 'a -> 'a",
+        "optionC": "fn: int -> int -> int",
+        "optionD": "fn: 'a -> 'a",
+        "optionE": "fn: int -> int -> 'a",
+        "optionF": "Nessuna delle altre risposte",
+        "correct": "optionC"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun funzione x y z = x ^ y ^ z</div>",
+        "optionA": "fn: string -> string",
+        "optionB": "fn: 'a -> 'a",
+        "optionC": "fn: 'a -> 'a -> 'a -> 'a",
+        "optionD": "fn: string -> string -> string -> int",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "fn: string -> string -> string -> string",
+        "correct": "optionF"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun c a1 a2 = a1::a2;</div>",
+        "optionA": "fn: 'a list -> 'a list -> 'a list",
+        "optionB": "fn: 'a -> 'a list -> 'a list",
+        "optionC": "fn: 'a -> 'a -> 'a",
+        "optionD": "fn: 'a -> 'a list",
+        "optionE": "fn: 'a -> 'a -> 'a list",
+        "optionF": "",
+        "correct": "optionB"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn l1 => fn l2 => l1@l2;</div>",
+        "optionA": "fn: 'a list -> 'a list -> 'a list",
+        "optionB": "fn: 'a -> 'a list -> 'a list",
+        "optionC": "fn: 'a -> 'a -> 'a",
+        "optionD": "fn: 'a -> 'a list",
+        "optionE": "fn: 'a -> 'a -> 'a list",
+        "optionF": "",
+        "correct": "optionA"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn a => fn b => fn c => (a * b) / c;</div>",
+        "optionA": "fn: int -> int -> int -> int",
+        "optionB": "fn: 'a -> 'a -> 'a -> 'a",
+        "optionC": "fn: int -> int -> int -> real",
+        "optionD": "fn: real -> real -> real -> real",
+        "optionE": "fn: int -> int -> real -> real",
+        "optionF": "",
+        "correct": "optionD"
+    },
+	{
+        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn a => fn b => a = b;</div>",
+        "optionA": "fn: ''a -> ''a -> bool",
+        "optionB": "fn: int -> int -> bool",
+        "optionC": "fn: string -> string -> bool",
+        "optionD": "fn: bool -> bool -> bool",
+        "optionE": "fn: 'a -> 'a -> bool",
+        "optionF": "",
+        "correct": "optionA"
     }
+	
 ]
