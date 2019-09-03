@@ -194,7 +194,7 @@
         "question": "La tecnica del display",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Permette di implementare facilmente lo scope dinamico",
-        "optionC": "Permette di ridurre il costo derivante dalla scansione della catena statica quando di implementa lo scope statico",
+        "optionC": "Permette di ridurre il costo derivante dalla scansione della catena statica quando si implementa lo scope statico",
         "optionD": "Permette di visualizzare le zone di memoria allocata dinamicamente",
         "optionE": "Permette di implementare le regole di scope statico senza generare frammentazione della memoria",
         "optionF": "",
