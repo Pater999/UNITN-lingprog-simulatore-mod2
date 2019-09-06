@@ -16,7 +16,7 @@ Per preparare la parte teorica leggettevi qualche volta le [slide tagliate del c
 * Una volta installato vi basterà aprirlo e si aprirà il terminale di polyML.
 
 **SU LINUX**
-* Aprite il terminale e digitate ```sudo apt-get update ``` e poi ``` sudo apt-get install poly  ```
+* Aprite il terminale e digitate ```sudo apt-get update ``` e poi ``` sudo apt-get install polyml  ```
 * Una volta installato digitate ``` poly ``` e vi si aprirà il terminale di polyML.
 
 Per aprire un file all'interno della console di POLY basta scrivere  ``` use "nomefile.sml"; ```
