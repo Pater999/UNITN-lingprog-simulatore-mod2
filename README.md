@@ -5,21 +5,7 @@ A [questo link](https://pater999.github.io/UNITN-lingprog-simulatore-mod2/index.
 Per preparare la parte teorica leggettevi qualche volta le [slide tagliate del corso](https://github.com/luigibrunetta/mod2/blob/master/Mod2%20Abeni%20-%20Tagliato.pdf) nelle quali sono state tolte slide inutili o spiegate male ([qui](https://github.com/luigibrunetta/mod2/tree/master/Mod2%20Teorico) trovate comunque tutte le slide complete). Inoltre per gli esercizi di [Lambda Calculus](https://stackoverflow.com/questions/34140819/lambda-calculus-reduction-steps) e per quelli sulle [Matrici Multidimensionali](https://stackoverflow.com/questions/56287596/in-which-memory-address-is-stored-an-element-in-a-multidimensional-matrix) trovate i procedimenti spiegati bene su StackOverflow.
 
 ## Per la parte di sbarramento (pratica - programmino in SML):
-* Iniziate leggendo [questo pdf](http://retis.santannapisa.it/~luca/LPM2/pf.pdf)
-* Guardatevi questi [video tutorial](https://www.youtube.com/playlist?list=PL-eVNDa9MNJczU4ZjhJDT8rIcCa12DyAx) (in inglese ma ben fatti) 
-* Provate a fare gli esercizi degli esami passati che trovate con le soluzioni a [questo link](https://github.com/luigibrunetta/mod2/blob/master/Esami%20PolyML.pdf) oppure anche [qua](https://github.com/luigibrunetta/mod2/tree/master/PolyML%20Esami)
-* Sulla didattica online e sul drive sono presenti altri esercizi messi a disposizione da Kuper e Abeni con i quali potete esercitarvi
-
-### Piccola guida installazione PolySML
-**SU WINDOWS**
-* Scaricate ed eseguite PolyML5.8-64bit.msi da [qui](https://github.com/polyml/polyml/releases).
-* Una volta installato vi basterà aprirlo e si aprirà il terminale di polyML.
-
-**SU LINUX**
-* Aprite il terminale e digitate ```sudo apt-get update ``` e poi ``` sudo apt-get install polyml  ```
-* Una volta installato digitate ``` poly ``` e vi si aprirà il terminale di polyML.
-
-Per aprire un file all'interno della console di POLY basta scrivere  ``` use "nomefile.sml"; ```
+* Ho creato una repo contente molti degli esami passati con soluzione e breve spiegazione che trovate a [questo link](https://github.com/Pater999/UNITN-linguaggi-programmazione-SML).
 
 ### Ringraziamenti e altre repository da cui ho preso le informazioni:
 https://github.com/luigibrunetta/mod2<br>
