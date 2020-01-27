@@ -84,7 +84,7 @@ function mescolaRisposte(ordine, n, num) {
             else {
                 str += '<input class="form-check-input" type="radio" name="exampleRadios" onclick="handleClick(this)" id="optionA">'
             }
-            str += '<label class="form-check-label" for="optionA">'
+            str += '<label class="form-check-label" for="optionA"> '
             str += domande[n].optionA;
             str += '</label>'
             str += '</div>'
@@ -172,7 +172,13 @@ function caricaDomanda(num) {
 	numDomandaCorrente = num;
 	var n = domandeProposte[num];
     
-    randomOrder = [0, 1, 2, 3, 4];
+    randomOrder = [0, 1, 2];
+    if (domande[n].optionD != "") {
+        randomOrder.push(3);
+    }
+    if (domande[n].optionE != "") {
+        randomOrder.push(4);
+    }
     if (domande[n].optionF != "") {
         randomOrder.push(5);
     }
@@ -323,29 +329,40 @@ function consegna() {
             numeroRisposteCorrette++;
         }
     }
+    let voto30 = roundTo((numeroRisposteCorrette / domandeProposte.length * 30), 2)
+
     str = "";
-    str += "<b>Risposte corrette:</b> " + numeroRisposteCorrette + "/" + domandeProposte.length + "<br>";
-    str += "<b>Percentuale risposte corrette:</b> " + roundTo((numeroRisposteCorrette / domandeProposte.length * 100), 2) + "%<br>";
-    str += "<b>Voto in 30esimi:</b> " + roundTo((numeroRisposteCorrette / domandeProposte.length * 30), 2) + "<br>";
-    if (tempo != "inf") {
-        str += "<b>Tempo utilizzato:</b> " + msToTime((tempotot - tempo)) + "<br>";
-        str += "<b>Percentuale tempo utilizzato:</b> " + roundTo(((tempotot - tempo) / tempotot * 100), 2) + "%<br>";
+    if (voto30 >= 18) {
+        str += '<button type="button" class="btn btn-success btn-lg btn-block">Sei stato promosso \u{1F389}\u{1F389}\u{1F389}</button>'
     }
     else {
-        str += "<b>Tempo utilizzato:</b> / <br>";
-        str += "<b>Percentuale tempo utilizzato:</b> / <br>";
+        str += '<button type="button" class="btn btn-danger btn-lg btn-block">Sei stato bocciato \u{1F625}</button><br>'
     }
-    str += "<div class='row' style='margin-left:0px'>"
-    str += "<b>Risposte:&nbsp;&nbsp;</b>"
+    
+    str += "\u{25B6} <b>Risposte corrette:</b> " + numeroRisposteCorrette + "/" + domandeProposte.length + "<br>";
+    str += "\u{25B6} <b>Percentuale risposte corrette:</b> " + roundTo((numeroRisposteCorrette / domandeProposte.length * 100), 2) + "%<br>";
+    str += "\u{25B6} <b>Voto in 30esimi:</b> " + voto30 + "<br>";
+    if (tempo != "inf") {
+        str += "\u{25B6} <b>Tempo utilizzato:</b> " + msToTime((tempotot - tempo)) + "<br>";
+        str += "\u{25B6} <b>Percentuale tempo utilizzato:</b> " + roundTo(((tempotot - tempo) / tempotot * 100), 2) + "%<br>";
+    }
+    else {
+        str += "\u{25B6} <b>Tempo utilizzato:</b> / <br>";
+        str += "\u{25B6} <b>Percentuale tempo utilizzato:</b> / <br>";
+    }
+    str += "<h5 style='margin-top:10px'>Risposte:</h5>"
+    str += "<div class='row' style='margin-left:0px;margin-top:-5px'>"
     for (i = 0; i < domandeProposte.length; i++) {
         if (risposteCorrette[i] == risposteDate[i]) {
-            str += "<b style='color:lightgreen;'>" + (i + 1) + '&nbsp;&nbsp;&nbsp;</b>';
+            //str += "<b style='color:lightgreen;'>" + (i + 1) + '&nbsp;&nbsp;&nbsp;</b>';
+            str += '<button type="button"  class="btn btn-success btn-sm" disabled style="background-color:green;border-radius: 0 0 0 0">' + (i + 1) + '</button>' + ''
         }
         else {
-            str += "<b style='color:red;'>" + (i + 1) + '&nbsp;&nbsp;&nbsp;</b>';
+            //str += "<b style='color:red;'>" + (i + 1) + '&nbsp;&nbsp;&nbsp;</b>';
+            str += '<button type="button"  class="btn btn-danger btn-sm" disabled style="background-color:red;border-radius: 0 0 0 0">' + (i + 1) + '</button>' + ''
         }
     }
-    str += "</div>"
+    str += "</div>&nbsp;"
 
     $('#result').html(str);
 
@@ -421,38 +438,42 @@ function showResult(num) {
     }
     str += '</label>'
     str += '</div>'
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionD") {
-        str += '<input class="form-check-input" disabled type="radio" name="exampleRadios" id="optionD"  checked="checked">'
+    if (domande[n].optionD != "") {
+        str += '<div class="form-check">'
+        if (risposteDate[num] == "optionD") {
+            str += '<input class="form-check-input" disabled type="radio" name="exampleRadios" id="optionD"  checked="checked">'
+        }
+        else {
+            str += '<input class="form-check-input" disabled type="radio" name="exampleRadios"  id="optionD">'
+        }
+        str += '<label class="form-check-label" for="optionD">'
+        if (risposteCorrette[num] == "optionD") {
+            str += '<b>' + domande[n].optionD + '</b>';
+        }
+        else {
+            str += domande[n].optionD;
+        }
+        str += '</label>'
+        str += '</div>'
     }
-    else {
-        str += '<input class="form-check-input" disabled type="radio" name="exampleRadios"  id="optionD">'
+    if (domande[n].optionE != "") {
+        str += '<div class="form-check">'
+        if (risposteDate[num] == "optionE") {
+            str += '<input class="form-check-input" disabled type="radio" name="exampleRadios"  id="optionE" checked="checked">'
+        }
+        else {
+            str += '<input class="form-check-input" disabled type="radio" name="exampleRadios"  id="optionE">'
+        }
+        str += '<label class="form-check-label" for="optionE">'
+        if (risposteCorrette[num] == "optionE") {
+            str += '<b>' + domande[n].optionE + '</b>';
+        }
+        else {
+            str += domande[n].optionE;
+        }
+        str += '</label>'
+        str += '</div>'
     }
-    str += '<label class="form-check-label" for="optionD">'
-    if (risposteCorrette[num] == "optionD") {
-        str += '<b>' + domande[n].optionD + '</b>';
-    }
-    else {
-        str += domande[n].optionD;
-    }
-    str += '</label>'
-    str += '</div>'
-    str += '<div class="form-check">'
-    if (risposteDate[num] == "optionE") {
-        str += '<input class="form-check-input" disabled type="radio" name="exampleRadios"  id="optionE" checked="checked">'
-    }
-    else {
-        str += '<input class="form-check-input" disabled type="radio" name="exampleRadios"  id="optionE">'
-    }
-    str += '<label class="form-check-label" for="optionE">'
-    if (risposteCorrette[num] == "optionE") {
-        str += '<b>' + domande[n].optionE + '</b>';
-    }
-    else {
-        str += domande[n].optionE;
-    }
-    str += '</label>'
-    str += '</div>'
     if (domande[n].optionF != "") {
         str += '<div class="form-check">'
         if (risposteDate[num] == "optionF") {
@@ -594,6 +615,13 @@ function getParameterByName(name, url) {
 }
 
 function msToTime(s) {
+
+    // Pad to 2 or 3 digits, default is 2
+    function pad(n, z) {
+        z = z || 2;
+        return ('00' + n).slice(-z);
+    }
+
     var ms = s % 1000;
     s = (s - ms) / 1000;
     var secs = s % 60;
@@ -601,7 +629,7 @@ function msToTime(s) {
     var mins = s % 60;
     var hrs = (s - mins) / 60;
 
-    return hrs + ':' + mins + ':' + secs;
+    return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);
 }
 
 function roundTo(value, decimalpositions) {
@@ -609,3 +637,11 @@ function roundTo(value, decimalpositions) {
     i = Math.round(i);
     return i / Math.pow(10, decimalpositions);
 }
+
+
+window.addEventListener('beforeunload', function (e) {
+    // Cancel the event
+    e.preventDefault();
+  // Chrome requires returnValue to be set
+    e.returnValue = 'Leaving this page will reset the wizard';
+});
