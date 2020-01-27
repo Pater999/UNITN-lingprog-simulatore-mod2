@@ -10,12 +10,52 @@
         "correct": "optionF"
     },
     {
+        "question": "<div class='code'>  p = malloc(); <br> q = malloc(); <br> *p = 999 <br> *q = 111 <br> *p += *q <br> q = p <br> free(p) </div><br> Utilizzando la tecnica dei tombstones cosa succede alla fine del frammento di codice dato?",
+        "optionA": "*p = 1110 e *q = 111",
+        "optionB": "p è deallocato e q punta ad una tombstone",
+        "optionC": "p e q sono entrambi deallocati",
+        "optionD": "q è deallocato e p punta ad una tombstone",
+        "optionE": "*p = 999 e *q = 111",
+        "optionF": "*p = 1110 e *q = 1110",
+        "correct": "optionB"
+    },
+    {
+        "question": "<div class='code'>  p = malloc(); <br> q = malloc(); <br> *p = 999 <br> *q = 111 <br> *p += *q <br> q = p <br> free(p) </div><br> Utilizzando la tecnica dei tombstones cosa succede alla fine del frammento di codice dato?",
+        "optionA": "*p = 1110 e *q = 111",
+        "optionB": "*p = 1110 e *q = 1110",
+        "optionC": "p e q sono entrambi deallocati",
+        "optionD": "q è deallocato e p punta ad una tombstone",
+        "optionE": "*p = 999 e *q = 111",
+        "optionF": "Nessuna delle risposte",
+        "correct": "optionF"
+    },
+    {
+        "question": "<div class='code'>  p = malloc(); <br> q = malloc(); <br> *p = 123 <br> *q = 321 <br> p = q <br> free(q) </div><br> Utilizzando la tecnica dei tombstones cosa succede alla fine del frammento di codice dato?",
+        "optionA": "*p = 123 e *q = 321",
+        "optionB": "p è deallocato e q punta ad una tombstone",
+        "optionC": "p e q sono entrambi deallocati",
+        "optionD": "q è deallocato e p punta ad una tombstone",
+        "optionE": "*p = 321 e *q = 321",
+        "optionF": "Nessuna delle risposte",
+        "correct": "optionD"
+    },
+    {
         "question": "La ricorsione in coda",
         "optionA": "Non è implementabile nei linguaggi imperativi",
         "optionB": "Nessuna delle altre risposte",
         "optionC": "Richiede di non scrivere mai la chiamata ricorsiva come ultimo statement di una subroutine",
         "optionD": "Richiede di non ritornare mai direttamente il valore ritornato da una chiamata ricorsiva",
         "optionE": "Permette di risolvere il problema della ricorsione infinita",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Call by constant",
+        "optionA": "Fa una copia della variabile",
+        "optionB": "è utile per passare oggetti",
+        "optionC": "Ritorna il valore al chiamante",
+        "optionD": "Permette la modifica della variabile",
+        "optionE": "Nessuna delle altre risposte",
         "optionF": "",
         "correct": "optionB"
     },
@@ -270,7 +310,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "I puntatori di catena dinamica contenuti in un record di attivazione",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Non esistono \"puntatori di catena dinamica\" in un record di attivazione",
@@ -280,7 +320,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Beta-riducendo (λx.xy)(λz.zx)(λz.zx) si ottiene",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "xyz",
@@ -290,7 +330,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "L’allocazione dinamica della memoria",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "E’ sempre effettuata solo dal compilatore o dall’interprete",
@@ -300,7 +340,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "Un compilatore da un linguaggio L ad un linguaggio LO è",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Una implementazione di macchine astratte indipendente dalla macchina fisica",
@@ -310,7 +350,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "I dangling pointer",
         "optionA": "Sono identificabili tramite tecniche di reference counting (contatore dei riferimenti)",
         "optionB": "Sono un problema solo per il linguaggio Java",
@@ -320,7 +360,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "La frammentazione esterna causa",
         "optionA": "Uno spreco di memoria",
         "optionB": "Nessuna delle altre risposte",
@@ -330,7 +370,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "La valutazione con corto circuito del predicato \"A && B\" (dove \"&&\" rappresenta un \"AND\" logico)",
         "optionA": "Stabilisce che se \"B\" è vero allora \"A\" non viene valutato",
         "optionB": "Nessuna delle altre risposte",
@@ -340,7 +380,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "Se l'ambiente di una funzione non contiene il nome della funzione stessa",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Non è possibile per la funzione invocarsi ricorsivamente",
@@ -350,7 +390,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "Se gli array sono memorizzati per colonne ed short int a[100][100] è un array multidimensionale di interi corti (si assuma che la dimensione di uno short int sia 2 byte) con a[0][0] che ha indirizzo 0x4100, qual è l'indirizzo di a[5][10]?",
         "optionA": "0x48DA",
         "optionB": "0x4510",
@@ -360,7 +400,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "La frammentazione interna causa",
         "optionA": "Il funzionamento non corretto di programmi che allocano memoria dinamicamente",
         "optionB": "Nessuna delle altre risposte",
@@ -370,7 +410,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "L'allocazione dinamica della memoria",
         "optionA": "Può essere fatta sia dallo stack che dallo heap",
         "optionB": "Nessuna delle altre risposte",
@@ -380,7 +420,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Beta-riducendo (λn.λf.λx.f((nf)x))(λf.λx.ffffx) si ottiene",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "λf.λx.ffffffx",
@@ -390,7 +430,7 @@
         "optionF": "L’espressione è irriducibile",
         "correct": "optionD"
     },
-	{
+    {
         "question": "Beta f-riducendo ((λa.aaa)(λb.b))(λc.c) si ottiene",
         "optionA": "La riduzione non termina",
         "optionB": "aaa",
@@ -400,7 +440,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "L'ambiente (o environment) è",
         "optionA": "L'insieme delle associazioni (nome, entità denotabile) esistenti in uno specifico punto del programma ed in uno specifico momento durante l'esecuzione di un programma",
         "optionB": "L'insieme dei valori che una variabile assume durante l'esecuzione di un programma",
@@ -410,7 +450,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Beta f-riducendo (λa.aaa)((λb.b)(λc.c)) si ottiene",
         "optionA": "λa.a",
         "optionB": "Nessuna delle altre risposte",
@@ -420,7 +460,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Si può dire che una macchina astratta che capisce il linguaggio Java non sia implementata in modo puramente compilativo perché",
         "optionA": "Non esistendo un vero e proprio runtime per Java, non si può parlare di compilazione pura",
         "optionB": "La macchina virtuale di Java (JVM) deve comunque essere compilata",
@@ -430,7 +470,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "La ricorsione in coda",
         "optionA": "Permette di risolvere il problema della ricorsione infinita",
         "optionB": "Richiede di non scrivere mai la chiamata ricorsiva come ultimo statement di una subroutine",
@@ -440,7 +480,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "La memoria gestita staticamente",
         "optionA": "E’ allocata esplicitamente dal programma a tempo di esecuzione, ma una volta allocata è staticamente legata al programma e non può essere liberata fino alla sua terminazione",
         "optionB": "E’ allocata prima dell’esecuzione del programma. Le entità allocate staticamente possono essere deallocate durante l’esecuzione del programma, per liberare memoria",
@@ -450,7 +490,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "Se gli array sono memorizzati per colonne e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 0x1100, qual è l'indirizzo di a[5][10]?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "0x24ED",
@@ -460,7 +500,17 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
+        "question": "Se gli array sono memorizzati per colonne e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 5243, qual è l'indirizzo di a[5][10]?",
+        "optionA": "Nessuna delle altre risposte",
+        "optionB": "5753",
+        "optionC": "6248",
+        "optionD": "4730",
+        "optionE": "4955",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
         "question": "Un interprete di un linguaggio L scritto in un linguaggio LO è",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "L'implementazione di una macchina astratta scritta nel linguaggio LO, che capisce programmi scritti nel linguaggio L",
@@ -470,7 +520,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "In caso di scope statico",
         "optionA": "Non è possibile annidare più blocchi di istruzioni",
         "optionB": "I legami fra nomi ed oggetto possono essere determinati solo a tempo di esecuzione",
@@ -480,7 +530,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "Un garbage collector",
         "optionA": "Può essere implementato tramite la tecnica detta “mark and sweep”, che riesce sempre ad identificare tutta la memoria allocata dinamicamente ma non più utilizzata",
         "optionB": "Richiede un’implementazione complessa, usando la tecnica dei tombstone (pietre tombali)",
@@ -490,7 +540,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Se gli array sono memorizzati per colonne ed short int a[100][100] è un array multidimensionale di interi corti (si assuma che la dimensione di uno short int sia 2 byte) con a[0][0] che ha indirizzo 0x4100, qual è l’indirizzo di a[5][10]?",
         "optionA": "0x41FE",
         "optionB": "0x500F",
@@ -500,7 +550,7 @@
         "optionF": "Nessuna delle altre risposte",
         "correct": "optionF"
     },
-	{
+    {
         "question": "Beta f-riducendo (λd.((λa.abc)(bc)))(λy.xyz) si ottiene",
         "optionA": "La riduzione non termina",
         "optionB": "Nessuna delle altre risposte",
@@ -510,7 +560,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "Un interprete di un linguaggio L scritto in un linguaggio LO è",
         "optionA": "Un programma che trasforma un programma PL (espresso nel linguaggio L) in un programma PLO (espresso nel linguaggio LO) tale che per ogni input I si ha PL(I) = PLO(I)",
         "optionB": "Nessuna delle altre risposte",
@@ -520,7 +570,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "L’ambiente (o environment) è",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Un insieme di associazioni (nome, valore) definite staticamente durante lo sviluppo di un programma",
@@ -530,7 +580,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Se gli array sono memorizzati per righe ed int a[100][100] è un un array multidimensionale di interi (si assuma che la dimensione di un intero sia 4 byte) con a[0][0] che ha indirizzo 0x1000, qual è l’indirizzo di a[5][10]?",
         "optionA": "0x100F",
         "optionB": "Nessuna delle altre risposte",
@@ -540,7 +590,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "Beta f-riducendo (λn.λf.λx.f((nf)x))(λf.λx.f(f(f(fx)))) si ottiene ",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "L’espressione è irriducibile",
@@ -550,7 +600,7 @@
         "optionF": "λf.λx.f(f(f(f(fx))))",
         "correct": "optionF"
     },
-	{
+    {
         "question": "Un garbage collector",
         "optionA": "Richiede un’implementazione complessa, usando la tecnica dei tombstone (pietre tombali)",
         "optionB": "E’ implementabile solo in linguaggi di programmazione funzionali",
@@ -560,7 +610,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "Se gli array sono memorizzati per righe e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 0x2000, qual è l’indirizzo di a[5][10]?",
         "optionA": "0x200F",
         "optionB": "0x21FE",
@@ -570,7 +620,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "Beta-riducendo (λn.λm.λf.λx.(nf)((mf)x))(λf.λx.fx)(λf.λx.x) si ottiene",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "x",
@@ -580,7 +630,7 @@
         "optionF": "λf.λx.ffffx",
         "correct": "optionD"
     },
-	{
+    {
         "question": "Beta-riducendo (λa.((aλb.λc.c)λd.λe.d))(λf.λg.g) si ottiene",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "λb.λc.b",
@@ -590,7 +640,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "L’ambiente (o environment) è",
         "optionA": "Un insieme di associazioni (nome, valore) definite staticamente durante lo sviluppo di un programma",
         "optionB": "Una lista di coppie (nome, tipo) che permette di accedere alle variabili di un programma",
@@ -600,7 +650,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "In caso di scope dinamico",
         "optionA": "Il valore assegnato ad una variabile non può essere modificato",
         "optionB": "Non è possibile annidare più blocchi di istruzioni",
@@ -610,7 +660,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "Beta-riducendo (λa.aab)((λa.aab)(λa.(λb.ba)c)) si ottiene",
         "optionA": "La riduzione non termina",
         "optionB": "aab",
@@ -620,7 +670,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "Un entità denotabile è",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Un entità che può essere generata come risultato da un espressione complessa o da una Funzione",
@@ -630,7 +680,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "I puntatori di catena statica contenuti in un record di attivazione",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Servono per accedere alle variabili statiche",
@@ -640,7 +690,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "La memoria gestita dinamicamente",
         "optionA": "E' usata solo in linguaggi interpretati",
         "optionB": "Non è mai strettamente necessaria, ma permette di ottenere migliori prestazioni",
@@ -650,7 +700,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "Se gli array sono memorizzati per colonne ed int a[100][100] è un array multidimensionale di interi (si assuma che la dimensione di un intero sia 4 byte) con a[0][0] che ha indirizzo 0x5000, qual è l'indirizzo di a[5][10]?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "0x53ED",
@@ -660,7 +710,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Beta riducendo (λa.aab)((λa.aab)(λa.(λb.ba)c)) si ottiene",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "ccb(ccb)c",
@@ -670,7 +720,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Beta-riducendo ((λa.aaa)(λb.b))(λc.c) si ottiene",
         "optionA": "λc.c",
         "optionB": "La riduzione non termina",
@@ -680,7 +730,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "Beta-riducendo (λd.((λa.abc)(bc)))(λy.xyz) si ottiene",
         "optionA": "La riduzione non termina",
         "optionB": "bcbc",
@@ -690,7 +740,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "Un entità denotabile può avere un tempo di vita più lungo di quello delle associazioni (fra l'entità ed identificatori) che lo riferiscono",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Se l'entità è allocata dinamicamente dallo heap in una subroutine",
@@ -700,7 +750,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "La memoria gestita dinamicamente",
         "optionA": "Non è mai strettamente necessaria, ma permette di ottenere migliori prestazioni",
         "optionB": "E' necessaria per implementare l'iterazione",
@@ -710,7 +760,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "I record d'attivazione",
         "optionA": "Devono essere esplicitamente allocati e deallocati dal codice del programma che li usa",
         "optionB": "Possono essere allocati sia sullo stack sia sullo heap (in caso, per esempio, di funzioni di ordine superiore)",
@@ -730,7 +780,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "<div class='code'>int c = 2; <br> int pippo(int a) { <br>&nbsp;&nbsp;&nbsp;c = c + 2; <br>&nbsp;&nbsp;&nbsp;return a * 2; <br>} <br>int pluto(void) {<br>&nbsp;&nbsp;&nbsp;return pippo(c + 1); <br>}</div>Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
         "optionA": "10",
         "optionB": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
@@ -740,7 +790,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "<div class='code'>int r(int x) {<br>&nbsp;&nbsp;&nbsp; return r(x - 1);<br>}<br>int f(int a, int b, int c) {<br>&nbsp;&nbsp;&nbsp;if (c == 1)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return a;<br>&nbsp;&nbsp;&nbsp;else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return b;<br>}</div>Si consideri lo pseudo-codice. Qual è il valore di ritorno di f(1,r(1),1) se i parametri sono passati per nome?",
         "optionA": "Non è possibile dirlo senza conoscere il tipo di scope (statico o dinamico) utilizzato",
         "optionB": "Nessuna delle altre risposte",
@@ -750,7 +800,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "<div class='code'>int a, b, c;<br>void pippo(void) {<br>&nbsp;&nbsp;&nbsp;int a;<br>&nbsp;&nbsp;&nbsp;a = 6;<br>&nbsp;&nbsp;&nbsp;b = 5;<br>}<br>  void pluto(void) {<br>  &nbsp;&nbsp;&nbsp;int c;<br>  &nbsp;&nbsp;&nbsp;int b;<br>  &nbsp;&nbsp;&nbsp;pippo();<br>  &nbsp;&nbsp;&nbsp;c = 3;<br>  &nbsp;&nbsp;&nbsp;a = 4;<br>  }<br>  void topolino(void) {<br>  &nbsp;&nbsp;&nbsp;int a;<br>  &nbsp;&nbsp;&nbsp;a = 1;<br>  &nbsp;&nbsp;&nbsp;b = 10;<br>&nbsp;&nbsp;&nbsp;pluto();<br>&nbsp;&nbsp;&nbsp;c = a + b;<br>}</div>Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope dinamico?",
         "optionA": "14",
         "optionB": "3",
@@ -760,7 +810,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "<div class='code'>  int x, y, z;<br>  void f3(void) {<br>      &nbsp;&nbsp;&nbsp;x = 0;<br>      &nbsp;&nbsp;&nbsp;y = 5;<br>  }<br>  void f2(void) {<br>      &nbsp;&nbsp;&nbsp;int y;<br>      &nbsp;&nbsp;&nbsp;f3();<br>      &nbsp;&nbsp;&nbsp;y = 0;<br>      &nbsp;&nbsp;&nbsp;z = 10;<br>  }<br>  int f1(void) {<br>      &nbsp;&nbsp;&nbsp;int x;<br>      &nbsp;&nbsp;&nbsp;x = -5;<br>      &nbsp;&nbsp;&nbsp;y = 10;<br>      &nbsp;&nbsp;&nbsp;z = x + y;<br>      &nbsp;&nbsp;&nbsp;f2();<br>      &nbsp;&nbsp;&nbsp;return z - y - x;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di f1(), assumendo scope statico?",
         "optionA": "5",
         "optionB": "Nessuna delle altre risposte",
@@ -770,7 +820,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "<div class='code'>  int b = 666;<br>  int pippo(int x) {<br>      &nbsp;&nbsp;&nbsp;x = 666;<br>      &nbsp;&nbsp;&nbsp;b = 1;<br>      &nbsp;&nbsp;&nbsp;return x / 2;<br>  }<br>  int pluto(void) {<br>      &nbsp;&nbsp;&nbsp;int a, c;<br>      &nbsp;&nbsp;&nbsp;a = b / 333;<br>      &nbsp;&nbsp;&nbsp;c = pippo(a);<br>      &nbsp;&nbsp;&nbsp;return a + c;<br>  }</div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "1",
@@ -780,7 +830,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "<div class='code'>  int somma(int a, int b) {<br>      &nbsp;&nbsp;&nbsp;if (a == 0)<br>      &nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp; return b;<br>     &nbsp;&nbsp;&nbsp; return somma(a - 1, b + 1);<br>  }<br></div>  Funzione implementata dallo pseudo-codice",
         "optionA": "Non usa ricorsione in coda",
         "optionB": "Non può essere implementata per via iterativa",
@@ -790,7 +840,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "<div class='code'>  int f4(int x) {<br>      &nbsp;&nbsp;&nbsp;return 1 / x;<br>  }<br>  int f3(int a, int b) {<br>      &nbsp;&nbsp;&nbsp;if (a > 1)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  return a;<br>     &nbsp;&nbsp;&nbsp; else<br>         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return b;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di f3(10,f4(0)) se i parametri sono passati per valore?",
         "optionA": "10",
         "optionB": "Non è possibile dirlo senza conoscere il tipo di scope (statico o dinamico) utilizzato",
@@ -800,7 +850,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "<div class='code'>  int i = 0;<br>  int x[10];<br>  int f2(int z) {<br>      &nbsp;&nbsp;&nbsp;i = i / 2;<br>      &nbsp;&nbsp;&nbsp;return z - i;<br>  }<br>  int f1(void) {<br>      &nbsp;&nbsp;&nbsp;int y;<br>      &nbsp;&nbsp;&nbsp;i = 4;<br>      &nbsp;&nbsp;&nbsp;x[0] = 1;<br>      &nbsp;&nbsp;&nbsp;x[1] = 0;<br>      &nbsp;&nbsp;&nbsp;x[2] = 2;<br>      &nbsp;&nbsp;&nbsp;x[3] = 4;<br>      &nbsp;&nbsp;&nbsp;x[4] = 6;<br>      &nbsp;&nbsp;&nbsp;y = f2(x[i]);<br>      &nbsp;&nbsp;&nbsp;return y + i;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di f1() se i parametri sono passati per valore?",
         "optionA": "0",
         "optionB": "2",
@@ -810,7 +860,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "<div class='code'>  int x, y, z;<br>  void f3(void) {<br>     &nbsp;&nbsp;&nbsp; x = 0;<br>     &nbsp;&nbsp;&nbsp; y = 5;<br>  }<br>  void f2(void) {<br>     &nbsp;&nbsp;&nbsp; int y;<br>      &nbsp;&nbsp;&nbsp;f3();<br>     &nbsp;&nbsp;&nbsp; y = 0;<br>     &nbsp;&nbsp;&nbsp; z = 10;<br>  }<br>  int f1(void) {<br>     &nbsp;&nbsp;&nbsp; int x;<br>    &nbsp;&nbsp;&nbsp;  x = -5;<br>    &nbsp;&nbsp;&nbsp;  y = 10;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>    &nbsp;&nbsp;&nbsp;  f2();<br>    &nbsp;&nbsp;&nbsp;  return z - y - x;<br>  }</div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di f1(), assumendo scope dinamico?",
         "optionA": "Non è possibile dirlo",
         "optionB": "5",
@@ -820,7 +870,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "<div class='code'>  int b = 666;<br>  int pippo(int x) {<br>    &nbsp;&nbsp;&nbsp;  x = 666; b = 1;<br>     &nbsp;&nbsp;&nbsp; return x / 2;<br>  }<br>  int pluto(void) {<br>     &nbsp;&nbsp;&nbsp; int a, c;<br>     &nbsp;&nbsp;&nbsp; a = b / 333;<br>     &nbsp;&nbsp;&nbsp; c = pippo(a);<br>     &nbsp;&nbsp;&nbsp; return a + c;<br>  }</div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "666",
@@ -830,7 +880,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "<div class='code'>  int somma(int a, int b) {<br>    &nbsp;&nbsp;&nbsp;  if (a == 0) return b;<br>     &nbsp;&nbsp;&nbsp; return somma(a - 1, b) + 1;<br>  }</div>  Funzione implementata dallo pseudo-codice",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Non può essere implementata per via iterativa",
@@ -840,7 +890,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "<div class='code'>  int b = 666;<br>  int pippo(int x) {<br>   &nbsp;&nbsp;&nbsp;   x = 666; b = 1;<br>    &nbsp;&nbsp;&nbsp;  return x / 2;<br>  }<br>  int pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int a, c;<br>   &nbsp;&nbsp;&nbsp;   a = b / 333;<br>     &nbsp;&nbsp;&nbsp; c = pippo(a);<br>    &nbsp;&nbsp;&nbsp;  return a + c;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per nome?",
         "optionA": "Non è possibile passare a per nome",
         "optionB": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
@@ -850,7 +900,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "<div class='code'>  int mistero(int a, int b) {<br>    &nbsp;&nbsp;&nbsp;  if (b == 0) return a;<br>   &nbsp;&nbsp;&nbsp;   return mistero(a / 2, b - 1);<br>  }<br></div>  La funzione implementata dallo pseudo-codice",
         "optionA": "Può causare una crescita incontrollata dello stack",
         "optionB": "Causa sempre ricorsione infinita",
@@ -860,7 +910,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "<div class='code'>  int x, y;<br>  void pippo(void) {<br>   &nbsp;&nbsp;&nbsp;   x = 8;<br>    &nbsp;&nbsp;&nbsp;  y = 4;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int y;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>    &nbsp;&nbsp;&nbsp;  y = 3;<br>  }<br>  int topolino(void) {<br>    &nbsp;&nbsp;&nbsp;  int x, z;<br>    &nbsp;&nbsp;&nbsp;  x = 5;<br>   &nbsp;&nbsp;&nbsp;   y = 15;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>    &nbsp;&nbsp;&nbsp;  pluto();<br>    &nbsp;&nbsp;&nbsp;  return z - y - x;<br>  }</div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di topolino(), assumendo scope statico?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Non è possibile dirlo",
@@ -870,7 +920,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "<div class='code'>  int x, y, z;<br>  void f3(void) {<br>    &nbsp;&nbsp;&nbsp;  x = 0;<br>    &nbsp;&nbsp;&nbsp;  y = 5;<br>  }<br>  void f2(void) {<br>    &nbsp;&nbsp;&nbsp;  int y;<br>    &nbsp;&nbsp;&nbsp;  f3();<br>    &nbsp;&nbsp;&nbsp;  y = 0;<br>     &nbsp;&nbsp;&nbsp; z = 10;<br>  }<br>  int f1(void) {<br>    &nbsp;&nbsp;&nbsp;  int x;<br>   &nbsp;&nbsp;&nbsp;   x = -5;<br>    &nbsp;&nbsp;&nbsp;  y = 10;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>   &nbsp;&nbsp;&nbsp;   f2();<br>   &nbsp;&nbsp;&nbsp;   return z - y - x;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di f1(), assumendo scope dinamico?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "-1",
@@ -880,7 +930,7 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
+    {
         "question": "<div class='code'>  int c = 2;<br>  int pippo(int a) {<br>   &nbsp;&nbsp;&nbsp;   c = c + 2;<br>   &nbsp;&nbsp;&nbsp;   return a * 2;<br>  }<br>  int pluto(void) {<br>   &nbsp;&nbsp;&nbsp;   return(pippo(c + 1));<br>  }</div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per valore?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
@@ -890,7 +940,7 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
         "question": "<div class='code'>  int r(int x) {<br>     &nbsp;&nbsp;&nbsp; return r(x - 1);<br>  }<br>  int f(int a, int b, int c) {<br>    &nbsp;&nbsp;&nbsp;  if (c == 1) return a; else return b;<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di f(1,r(1),1) se i parametri sono passati per valore?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "Si ha ricorsione infinita",
@@ -900,7 +950,7 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
+    {
         "question": "<div class='code'>  int x, y, z;<br>  void minni(void) {<br>   &nbsp;&nbsp;&nbsp;   x = 4;<br>   &nbsp;&nbsp;&nbsp;   y = 8;<br>  }<br>  void paperino(void) {<br>   &nbsp;&nbsp;&nbsp;   int y;<br>   &nbsp;&nbsp;&nbsp;   minni();<br>    &nbsp;&nbsp;&nbsp;  y = 1;<br>    &nbsp;&nbsp;&nbsp;  z = 666;<br>  }<br>  int topolino(void) {<br>   &nbsp;&nbsp;&nbsp;   int x;<br>    &nbsp;&nbsp;&nbsp;  x = 5;<br>    &nbsp;&nbsp;&nbsp;  y = 15;<br>    &nbsp;&nbsp;&nbsp;  z = x + y;<br>    &nbsp;&nbsp;&nbsp;  paperino();<br>    &nbsp;&nbsp;&nbsp;  return z - y - x;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), qual è il valore di ritorno di topolino(), assumendo scope statico?",
         "optionA": "-3",
         "optionB": "0",
@@ -910,7 +960,7 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
+    {
         "question": "<div class='code'>  int c = 2;<br>  int pippo(int a) {<br>    &nbsp;&nbsp;&nbsp;  c = c + 2;<br>     &nbsp;&nbsp;&nbsp; return a * 2;<br>  }<br>  int pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  return(pippo(c + 1));<br>  }<br></div>  Si consideri lo pseudo-codice. Qual è il valore di ritorno di pluto() se i parametri sono passati per riferimento?",
         "optionA": "Dipende dal tipo di scope (statico o dinamico) utilizzato",
         "optionB": "10",
@@ -920,7 +970,7 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
+    {
         "question": "<div class='code'>  int a, b, c;<br>  void pippo(void) {<br>    &nbsp;&nbsp;&nbsp;  int a;<br>    &nbsp;&nbsp;&nbsp;  a = 6;<br>    &nbsp;&nbsp;&nbsp;  b = 5;<br>  }<br>  void pluto(void) {<br>    &nbsp;&nbsp;&nbsp;  int c;<br>    &nbsp;&nbsp;&nbsp;  int b;<br>    &nbsp;&nbsp;&nbsp;  pippo();<br>     &nbsp;&nbsp;&nbsp; c = 3;<br>     &nbsp;&nbsp;&nbsp; a = 4;<br>  }<br>  void topolino(void) {<br>     &nbsp;&nbsp;&nbsp; int a;<br>    &nbsp;&nbsp;&nbsp;  a = 1;<br>    &nbsp;&nbsp;&nbsp;  b = 10;<br>     &nbsp;&nbsp;&nbsp; pluto();<br>     &nbsp;&nbsp;&nbsp; c = a + b;<br>  }<br></div>  Dato il frammento di programma (espresso in pseudo-codice), quanto vale la variabile globale c dopo aver eseguito topolino(), assumendo scope statico?",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "6",
@@ -930,8 +980,8 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun x y -> x y;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun x y -> x y;</div>",
         "optionA": "fun: 'a->'b",
         "optionB": "fun: 'a->'b->string->string",
         "optionC": "fun: ('a->'b)->'a->'b",
@@ -940,8 +990,8 @@
         "optionF": "",
         "correct": "optionC"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>List.map print string;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>List.map print string;</div>",
         "optionA": "fun : string list -> string list",
         "optionB": "fun : string list -> unit list",
         "optionC": "fun : string list -> string",
@@ -950,8 +1000,8 @@
         "optionF": "fun: 'a list -> 'b list",
         "correct": "optionB"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>let f1 l = List.map (fun x y -> x,y) l;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>let f1 l = List.map (fun x y -> x,y) l;</div>",
         "optionA": "f1:'a list->('b -> 'a -> 'b) list",
         "optionB": "f1:'a list-> 'b -> ('a * 'b)",
         "optionC": "fun x y -> x,y :'a -> 'b -> 'a * 'b",
@@ -960,8 +1010,8 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>(fun f x = x) 12;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>(fun f x = x) 12;</div>",
         "optionA": "12: int",
         "optionB": "'a: 12",
         "optionC": "string: \"12\"",
@@ -970,8 +1020,8 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun f1 x = [x,x];</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun f1 x = [x,x];</div>",
         "optionA": "f1 = fn: 'a list -> 'a list",
         "optionB": "f1 = fn: 'a list -> 'b list",
         "optionC": "f1 = fn: 'a -> 'b",
@@ -980,8 +1030,8 @@
         "optionF": "f1 = fn: string -> string",
         "correct": "optionD"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun f2 x y = (x @ (y x));</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun f2 x y = (x @ (y x));</div>",
         "optionA": "fun: 'a -> 'a -> 'a -> 'a",
         "optionB": "fun: 'a list -> ('a list -> 'a list) -> 'a list",
         "optionC": "fun: 'a list -> 'a list -> 'a list",
@@ -990,8 +1040,8 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun f3 x = List.map x;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun f3 x = List.map x;</div>",
         "optionA": "fun : ('a list -> 'b list) -> 'a list -> 'b list",
         "optionB": "fun : ('a -> 'b) -> 'a -> 'b",
         "optionC": "fun : ('a -> 'a) -> 'a list -> 'a list",
@@ -1000,8 +1050,8 @@
         "optionF": "",
         "correct": "optionE"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn x => fn y => x+y;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fn x => fn y => x+y;</div>",
         "optionA": "fn: int -> int",
         "optionB": "fn: 'a -> 'a -> 'a",
         "optionC": "fn: int -> int -> int",
@@ -1010,8 +1060,8 @@
         "optionF": "Nessuna delle altre risposte",
         "correct": "optionC"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun funzione x y z = x ^ y ^ z</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun funzione x y z = x ^ y ^ z</div>",
         "optionA": "fn: string -> string",
         "optionB": "fn: 'a -> 'a",
         "optionC": "fn: 'a -> 'a -> 'a -> 'a",
@@ -1020,8 +1070,8 @@
         "optionF": "fn: string -> string -> string -> string",
         "correct": "optionF"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fun c a1 a2 = a1::a2;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun c a1 a2 = a1::a2;</div>",
         "optionA": "fn: 'a list -> 'a list -> 'a list",
         "optionB": "fn: 'a -> 'a list -> 'a list",
         "optionC": "fn: 'a -> 'a -> 'a",
@@ -1030,8 +1080,8 @@
         "optionF": "",
         "correct": "optionB"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn l1 => fn l2 => l1@l2;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fn l1 => fn l2 => l1@l2;</div>",
         "optionA": "fn: 'a list -> 'a list -> 'a list",
         "optionB": "fn: 'a -> 'a list -> 'a list",
         "optionC": "fn: 'a -> 'a -> 'a",
@@ -1040,8 +1090,8 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn a => fn b => fn c => (a * b) / c;</div>",
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fn a => fn b => fn c => (a * b) / c;</div>",
         "optionA": "fn: int -> int -> int -> int",
         "optionB": "fn: 'a -> 'a -> 'a -> 'a",
         "optionC": "fn: int -> int -> int -> real",
@@ -1050,7 +1100,27 @@
         "optionF": "",
         "correct": "optionD"
     },
-	{
+    {
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun f [] = (7.0; print(\"ab\")) | f (x::xs) = (2.3; print(\"cd\"));</div>",
+        "optionA": "val f = fn: 'a list -> unit ",
+        "optionB": "'a list -> int",
+        "optionC": "'a tuple",
+        "optionD": "val f = fn: 'a list -> real",
+        "optionE": "real list -> string",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Qual è l'output del seguente codice: <div class='code'>List.partition(fn x => x > 0) (List.take ([~1,1,~2,~2,~3,3],4));</div>",
+        "optionA": "val it = ([1,3], [~1, ~2, ~2, ~3]): int list * int list",
+        "optionB": "val it = [1,3]: int list",
+        "optionC": "val it = [1]: int list",
+        "optionD": "val it = ([1], [~1, ~2, ~2]): int list * int list",
+        "optionE": "val it = ([], [~2]): int list * int list",
+        "optionF": "val it = []: int list",
+        "correct": "optionD"
+    },
+    {
         "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn a => fn b => a = b;</div>",
         "optionA": "fn: ''a -> ''a -> bool",
         "optionB": "fn: int -> int -> bool",
@@ -1060,8 +1130,8 @@
         "optionF": "",
         "correct": "optionA"
     },
-	{
-        "question": "Quale delle seguenti affermazioni riguardanti il garbage collector è falsa",
+    {
+        "question": "Quale delle seguenti affermazioni riguardanti il garbage collector è vera",
         "optionA": "Per Garbage Collection si intende una modalità automatica di gestione della memoria",
         "optionB": "L’utente alloca liberamente memoria",
         "optionC": "Non è permesso deallocare memoria",
@@ -1070,15 +1140,15 @@
         "optionF": "Tutte sono corrette",
         "correct": "optionF"
     },
-	{
+    {
         "question": "Quale delle seguenti affermazioni riguardanti il Garbage Collector è falsa",
         "optionA": "Il garbage collector annoterà le aree di memoria non più referenziate e le libererà automaticamente",
         "optionB": "L’utente alloca liberamente memoria",
         "optionC": "E' permesso deallocare memoria",
-        "optionD": "Tutte le opzioni sono corrette",
+        "optionD": "Un sistema operativo, o un compilatore, e un modulo di run-time liberano porzioni di memoria non più utilizzate dalle applicazioni.",
         "optionE": "Il sistema periodicamente recupera la memoria allocata e non più utilizzabile",
         "optionF": "",
         "correct": "optionC"
     }
-	
+
 ]
