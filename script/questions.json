@@ -501,14 +501,14 @@
         "correct": "optionE"
     },
     {
-        "question": "Se gli array sono memorizzati per colonne e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 5243, qual è l'indirizzo di a[5][10]?",
+        "question": "Se gli array sono memorizzati per colonne e char a[100][100] è un array multidimensionale di caratteri con a[0][0] che ha indirizzo 5243, qual è l'indirizzo di a[5][10]? (i numeri sono in decimale)",
         "optionA": "Nessuna delle altre risposte",
         "optionB": "5753",
         "optionC": "6248",
         "optionD": "4730",
         "optionE": "4955",
         "optionF": "",
-        "correct": "optionB"
+        "correct": "optionC"
     },
     {
         "question": "Un interprete di un linguaggio L scritto in un linguaggio LO è",
