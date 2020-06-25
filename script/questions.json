@@ -1121,7 +1121,7 @@
         "correct": "optionD"
     },
     {
-        "question": "Qual'è il tipo della seguente espressione: <div class='code'>fn a => fn b => a = b;</div>",
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fn a => fn b => a = b;</div>",
         "optionA": "fn: ''a -> ''a -> bool",
         "optionB": "fn: int -> int -> bool",
         "optionC": "fn: string -> string -> bool",
