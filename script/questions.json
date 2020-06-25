@@ -981,7 +981,7 @@
         "correct": "optionB"
     },
     {
-        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun x y -> x y;</div>",
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>fun f x y = x y;</div>",
         "optionA": "fun: 'a->'b",
         "optionB": "fun: 'a->'b->string->string",
         "optionC": "fun: ('a->'b)->'a->'b",
