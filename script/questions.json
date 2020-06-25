@@ -1011,7 +1011,7 @@
         "correct": "optionE"
     },
     {
-        "question": "Qual è il tipo della seguente espressione: <div class='code'>(fun f x = x) 12;</div>",
+        "question": "Qual è il tipo della seguente espressione: <div class='code'>(fn x => x) 12;</div>",
         "optionA": "12: int",
         "optionB": "'a: 12",
         "optionC": "string: \"12\"",
