@@ -159,7 +159,6 @@
     "optionF": "",
     "correct": "optionC"
   },
-
   {
     "question": "Il concetto di variabile modificabile",
     "optionA": "È l'unico concetto utilizzabile quando si parla di variabili",
@@ -1179,5 +1178,65 @@
     "optionE": "Non dipende dal programma che si esegue",
     "optionF": "",
     "correct": "optionB"
+  },
+  {
+    "question": "L'utilizzo della ricorsione in coda (tail recursion) in una funzione:",
+    "optionA": "Utilizza più memoria",
+    "optionB": "Nessuna delle altre risposte",
+    "optionC": "Riduce la possibilità di avere stack overflow",
+    "optionD": "Riduce l'efficienza della funzione",
+    "optionE": "Richiede rimozione manuale degli stack frame ",
+    "optionF": "",
+    "correct": "optionB"
+  },
+  {
+    "question": "Qual è il tipo della seguente espressione: <div class='code'>fun f[] = (print(\"ab\"); 7.0) | f(x::xs) = (print(\"cd\"); 4.0);</div>",
+    "optionA": "‘a list --> int",
+    "optionB": "“a --> real",
+    "optionC": "‘a record",
+    "optionD": "‘a tuple",
+    "optionE": "‘a list --> real ",
+    "optionF": "",
+    "correct": "optionE"
+  },
+  {
+    "question": "<div class='code'>  p = malloc(); <br> q = malloc(); <br> *p = 222; <br> *q = 999; <br> *q = *p / 2; <br> q = p; <br> free(p); </div><br> Utilizzando la tecnica dei tombstones cosa succede alla fine del frammento di codice dato?",
+    "optionA": "q punta alla tombstone, p punta alla tombstone",
+    "optionB": "Nessuna delle altre risposte",
+    "optionC": "*p=999, q punta alla tombstone",
+    "optionD": "p punta alla tombstone, *q=111 ",
+    "optionE": "q risulta deallocato, *p=222",
+    "optionF": "",
+    "correct": "optionB"
+  },
+  {
+    "question": "La chiusura (closure) è:",
+    "optionA": "Nessuna delle altre risposte",
+    "optionB": "espressione, ambiente (expression, environment) dove quest’ultimo ha almeno tutte le variabili nell’espressione unitamente all’indirizzo di ritorno",
+    "optionC": "espressione, ambiente (expression, environment) dove quest’ultimo ha alcune delle variabili nell’espressione",
+    "optionD": "espressione, ambiente (expression, environment) dove quest’ultimo ha almeno tutte le variabili nell’espressione",
+    "optionE": "utilizzata per le call by reference",
+    "optionF": "",
+    "correct": "optionB"
+  },
+  {
+    "question": "Se gli array sono memorizzati per colonne ed short int a[100][100] è un array multidimensionale di interi corti (si assuma che la dimensione di uno short int sia 2 byte) con a[0][0] che ha indirizzo 16640, qual è l’indirizzo di a[5][10]?:",
+    "optionA": "18650",
+    "optionB": "18394",
+    "optionC": "17680",
+    "optionD": "16894",
+    "optionE": "Nessuna delle altre risposte ",
+    "optionF": "",
+    "correct": "optionA"
+  },
+  {
+    "question": "<div class='code'>z=1; <br> for i=1 to 1+z by 1 do { <br>  write(i); <br>  z++; <br>  } <br>write(z);</div><br> Usando la \"bounded iteration\" (numerically controlled) indicare cosa viene stampato dal seguente codice",
+    "optionA": "1 2 3 4 ... (infinite loop)",
+    "optionB": "1 2",
+    "optionC": "1 2 3",
+    "optionD": "Nessuna delle altre risposte",
+    "optionE": "1 1 1",
+    "optionF": "",
+    "correct": "optionC"
   }
 ]
