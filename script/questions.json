@@ -1238,5 +1238,15 @@
     "optionE": "1 1 1",
     "optionF": "",
     "correct": "optionB"
+  },
+  {
+    "question": "Polish notation. Indicare il risultato di x – 5 6 7:",
+    "optionA": "-37",
+    "optionB": "-5",
+    "optionC": "23",
+    "optionD": "-7",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionD"
   }
 ]
