@@ -1248,5 +1248,65 @@
     "optionE": "Nessuna delle altre risposte",
     "optionF": "",
     "correct": "optionD"
+  },
+  {
+    "question": "Call by name",
+    "optionA": "Usata raramente al giorno d'oggi",
+    "optionB": "Utilizzata in molti linguaggi procedurali",
+    "optionC": "Richiede il passaggio dei valori delle variabili sullo stack",
+    "optionD": "Ha una definizione semplice",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionE"
+  },
+  {
+    "question": "Qual è l'output del seguente codice: <div class='code'>val m = (List.map(fn x=>x*x))[4, 5, 6]; List.foldr Int.+0 m;</div>",
+    "optionA": "15",
+    "optionB": "77",
+    "optionC": "'a list -> int'",
+    "optionD": "NaN",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionB"
+  },
+  {
+    "question": "Un'espressione può essere beta-ridotta ad un unica forma normale",
+    "optionA": "Mai",
+    "optionB": "Sempre",
+    "optionC": "Solo se la riduzione termina",
+    "optionD": "Ci possono essere diverse forme normali",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionC"
+  },
+  {
+    "question": "TextIO.lookahead",
+    "optionA": "Legge il carattere successivo ma lo lascia nell'input stream",
+    "optionB": "Verifica se c'è un altro carattere nell'input stream",
+    "optionC": "error",
+    "optionD": "Legge il carattere successivo",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionA"
+  },
+  {
+    "question": "L'iterazione determinata",
+    "optionA": "Non è implementabile in nessun linguaggio",
+    "optionB": "Permette di modificare la variabile di controllo durante l'esecuzione del corpo dell'iterazione",
+    "optionC": "Non permette di sapere in anticipo quante volte si ripeterà indipendentemente dal corpo del ciclo",
+    "optionD": "è presente in C, C++ e Java",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionE"
+  },
+  {
+    "question": "Qual è l'output del seguente codice: <div class='code'>val i=ref 1; while !i<10 do i := !i+1;</div>",
+    "optionA": "val i=10",
+    "optionB": "val it=()",
+    "optionC": "Loop infinito",
+    "optionD": "Type error",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionB"
   }
 ]
