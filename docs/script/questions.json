@@ -1308,5 +1308,65 @@
     "optionE": "Nessuna delle altre risposte",
     "optionF": "",
     "correct": "optionB"
+  },
+  {
+    "question": "In ML <div class='code'>:></div> serve a:",
+    "optionA": "nessuna delle altre risposte",
+    "optionB": "nasconde i componenti di una lista",
+    "optionC": "è usata per definire funzioni polimorfiche",
+    "optionD": "nasconde i componenti di una struttura",
+    "optionE": "definisce la firma di una struttura",
+    "optionF": "",
+    "correct": "optionD"
+  },
+  {
+    "question": "Un linguaggio di programmazione (come FORTRAN) usa un'allocazione fissa della memoria (at compile time). Questo tipo di linguaggio non può supportare:",
+    "optionA": "floating point numbers",
+    "optionB": "exceptions",
+    "optionC": "variable size arrays",
+    "optionD": "nessuna delle precedenti",
+    "optionE": "procedures",
+    "optionF": "",
+    "correct": "optionC"
+  },
+  {
+    "question": "Dato il seguente programma in ML, indicare il risultato: <div class='code'>Datatype fruit = Apple | Pear | Grape; isApple x = (x=Apple); isApple (Lemon);</div>",
+    "optionA": "nessuna delle altre risposte",
+    "optionB": "false",
+    "optionC": "undeclared value",
+    "optionD": "true",
+    "optionE": "type error",
+    "optionF": "",
+    "correct": "optionC"
+  },
+  {
+    "question": "Point reversal viene usato per garbage collection:",
+    "optionA": "per evitare di sprecare spazio",
+    "optionB": "nessuna delle precedenti",
+    "optionC": "nelle implementazioni di python",
+    "optionD": "quando non si ha spazio per una search structure",
+    "optionE": "per gestire loops nelle strutture puntatore",
+    "optionF": "",
+    "correct": "optionD"
+  },
+  {
+    "question": "La differenza fra espressione e comandi:",
+    "optionA": "Un comando può modificare l'ambiente (locale, non locale o globale) mentre una espressione no",
+    "optionB": "Non esistono differenze: sono due nomi diversi per la stessa entità sintattica",
+    "optionC": "Nessuna delle altre",
+    "optionD": "L'esecuzione di un comando produce un valore(o non termina), mentre la valutazione di una espressione può non produrre valori",
+    "optionE": "Le espressioni non possono usare simboli appartenenti ad ambienti non locali",
+    "optionF": "",
+    "correct": "optionC"
+  },
+  {
+    "question": "Il cut=! i Prolog:",
+    "optionA": "Ha successo e ferma il backtracking",
+    "optionB": "nessuna delle altre",
+    "optionC": "esegue il backtracking",
+    "optionD": "Chiama una eccezione",
+    "optionE": "fallisce e ferma il backtracking",
+    "optionF": "",
+    "correct": "optionA"
   }
 ]

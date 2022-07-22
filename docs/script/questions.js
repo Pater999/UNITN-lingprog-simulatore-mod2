@@ -308,7 +308,7 @@ function consegna() {
     }
   }
   let voto30 = roundTo((numeroRisposteCorrette / domandeProposte.length) * 30, 2);
-  let votoProf = 12 + roundTo((numeroRisposteCorrette / domandeProposte.length) * 18, 2);
+  let votoProf = 14 + roundTo((numeroRisposteCorrette / domandeProposte.length) * 16, 2);
 
   str = "";
   if (voto30 >= 18) {
