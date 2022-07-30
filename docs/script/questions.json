@@ -1368,5 +1368,85 @@
     "optionE": "fallisce e ferma il backtracking",
     "optionF": "",
     "correct": "optionA"
+  },
+  {
+    "question": "In ML 4+3.0 genera come risultato:",
+    "optionA": "Errore di tipo",
+    "optionB": "7.0",
+    "optionC": "Nessuna delle altre risposte",
+    "optionD": "Dipende dall'implementazione",
+    "optionE": "7",
+    "optionF": "",
+    "correct": "optionA"
+  },
+  {
+    "question": "Pointer reversal is used in garbage collection:",
+    "optionA": "In implementations of Python",
+    "optionB": "To avoid wasting space for marking used records",
+    "optionC": "To deal with loops in pointer structures",
+    "optionD": "When we don't have space for a earch structure",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionB"
+  },
+  {
+    "question": "Memorizzare array in ordine di riga o colonna:",
+    "optionA": "Nessuna delle altre risposte",
+    "optionB": "Conta soltanto quando si usa il caching",
+    "optionC": "Viene sempre usato l'ordine per colonna",
+    "optionD": "Non conta mai",
+    "optionE": "Viene sempre usato l'ordine per riga",
+    "optionF": "",
+    "correct": "optionA"
+  },
+  {
+    "question": "Indicare il risultato di Struct2.x = Struct2.i; Dato il seguente programma ML: <div class='code'>structure Struct1 = struct; val i = 3; type t = int; val x = 4; end; signature SIG1 = sig; val i:int; type t; val x: t; end; structure Struct2:> SIG1 = Struct1;</div>",
+    "optionA": "Nessuna delle altre risposte",
+    "optionB": "3",
+    "optionC": "false",
+    "optionD": "type error",
+    "optionE": "true",
+    "optionF": "",
+    "correct": "optionD"
+  },
+  {
+    "question": "Un ADT è definito essere un modello matematico di un user-defined type, insieme a tutte le operazioni su quel modo:",
+    "optionA": "Struttura",
+    "optionB": "Primitiva",
+    "optionC": "Assignment",
+    "optionD": "Cardinalità",
+    "optionE": "Nessuna delle precedenti",
+    "optionF": "",
+    "correct": "optionA"
+  },
+  {
+    "question": "Un linguaggio di programmazione (come FORTRAN) usa una allocazione fissa della memoria (in compilazione). Questo tipo di linguaggio non può supportare:",
+    "optionA": "Procedure",
+    "optionB": "Eccezioni",
+    "optionC": "Ricorsione",
+    "optionD": "Nessuna della altre risposte",
+    "optionE": "Numeri floating-point",
+    "optionF": "",
+    "correct": "optionC"
+  },
+  {
+    "question": "In Prolog:",
+    "optionA": "Conta l'ordine delle regole e predicati (da sinistra a destra) in una regola",
+    "optionB": "Nessuna delle altre risposte",
+    "optionC": "Conta l'ordine delle regole e predicati (da destra a sinistra) in una regola",
+    "optionD": "Conta solo l'ordine delle regole",
+    "optionE": "Conta solo l'ordine dei predicati (da destra a sinistra) in una regola",
+    "optionF": "",
+    "correct": "optionE"
+  },
+  {
+    "question": "Si assuma che A sia un array di lunghezza 40. Trovare il 30simo elemento",
+    "optionA": "Array.sub(A,30)",
+    "optionB": "Array.sub(A,29)",
+    "optionC": "Nessuna delle altre risposte",
+    "optionD": "sub(A,29)",
+    "optionE": "A[30]",
+    "optionF": "",
+    "correct": "optionD"
   }
 ]
