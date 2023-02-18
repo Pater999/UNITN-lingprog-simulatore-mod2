@@ -21,7 +21,7 @@ A [QUESTO LINK](https://pater999.github.io/UNITN-lingprog-simulatore-mod2/index.
 **NB:** Le soluzioni non vengono pubblicate dal professore. L'unico modo per mantenere questa repository aggiornata è ricordarsi le nuove domande o chiedere al professore di vedere la propria prova al ricevimento. Aprendo una [issue](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/issues), una [pull request](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/pulls) oppure contattandomi su [telegram](https://t.me/pater999) scrivendomi le nuove domande, potreste essere utili anche agli studenti degli anni successivi.
 
 ### PDF con tutte le domande
-Ho caricato un [file PDF](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/blob/master/Raccolta_domande_e_risposte_linguaggi.pdf) contente tutte le domande con risposta presenti nel simulatore.<br> Potete scaricare l'ultima versione aggiornata del pdf a [QUESTO LINK](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/releases).
+Ho caricato un [file PDF](https://pater999.it/UNITN-lingprog-simulatore-mod2/Raccolta_domande_programmazione_funzionale.pdf) contente tutte le domande con risposta presenti nel simulatore.<br> Potete scaricare l'ultima versione aggiornata del pdf a [QUESTO LINK](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/releases).
 
 ### Per la parte di sbarramento (Pratica - programmino in SML)
 Ho creato una repo contente molti degli esami passati con soluzione e breve spiegazione che trovate a [QUESTO LINK](https://github.com/Pater999/UNITN-linguaggi-programmazione-SML).
