@@ -1448,5 +1448,35 @@
     "optionE": "A[30]",
     "optionF": "",
     "correct": "optionD"
+  },
+  {
+    "question": "Un linker",
+    "optionA": "Viene usato per l'efficienza",
+    "optionB": "Sostituisce indirizzi relativi con indirizzi assoluti",
+    "optionC": "Viene utilizzato nei linguaggi interpretati",
+    "optionD": "Nessuna delle altre risposte",
+    "optionE": "È scritto in linguaggio macchina",
+    "optionF": "",
+    "correct": "optionA"
+  },
+  {
+    "question": "In ML, quale espressione è legale",
+    "optionA": "[1.0, 2, 3]",
+    "optionB": "fnx:real => x*2",
+    "optionC": "\"a\", 1, 2",
+    "optionD": "(1, 2, 0)",
+    "optionE": "Nessuna delle altre risposte",
+    "optionF": "",
+    "correct": "optionD"
+  },
+  {
+    "question": "Qual è il tipo di SOME[2, 3, 4];",
+    "optionA": "a' list option",
+    "optionB": "int list option",
+    "optionC": "(int*int*int) option",
+    "optionD": "Nessuna delle altre risposte",
+    "optionE": "int list",
+    "optionF": "",
+    "correct": "optionB"
   }
 ]
