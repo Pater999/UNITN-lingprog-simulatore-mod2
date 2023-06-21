@@ -1478,5 +1478,66 @@
     "optionE": "int list",
     "optionF": "",
     "correct": "optionB"
+  },
+  {
+    "question":"Nel lambda calcolo",
+    "optionA":"Nessuna delle altre risposte",
+    "optionB":"In un applicazione e1e2, l'insieme delle variabili free è dato dall'unione delle variabili free rispettivamente in e1 e in e2 mentre quello delle variabili bound è dato dall'interesezione delle variabili bound rispettivamente in e1 e in e2",
+    "optionC":"L'insieme delle variabili free di un espressione costruita da una variabile (e.g., x) è l'insieme vuoto",
+    "optionD":"L'insieme delle variabili bound di un espressione costruita da una variabile (e.g., x) è l'insieme vuoto",
+    "optionE":"L'applicazione associa a destra",
+    "optionF":"",
+    "correct":"optionD"
+  },
+  {
+    "question":"Un garbage collector",
+    "optionA":"è basato su due fasi logiche: identificazione del garbage e raccolta del garbage",
+    "optionB":"Richiede un’implementazione basata sulla tecnica dei 'tombstone'",
+    "optionC":"Richiede un’implementazione basata sul meccanismo di 'lock and key'",
+    "optionD":"Nessuna della altre risposte",
+    "optionE":"Può essere implementato con il meccanismo di 'counting reference', che riesce sempre a identificare la memoria allocata ma non più utilizzata",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Beta-riducendo (λx.x(xy))(λz.zx) si ottiene",
+    "optionA":"nessuna delle altre risposte",
+    "optionB":"yxx",
+    "optionC":"λx.xyy",
+    "optionD":"xyx",
+    "optionE":"La riduzione non termina",
+    "optionF":"",
+    "correct":"optionB"    
+  },
+  {
+    "question": "In Prolog:",
+    "optionA": "Conta l'ordine (i) delle regole e (ii) dei predicati (da sinistra a destra) in una regola",
+    "optionB": "Nessuna delle altre risposte",
+    "optionC": "Non è mai possibile fare backtracking",
+    "optionD": "Conta solo l'ordine delle regole",
+    "optionE": "Conta solo l'ordine dei predicati (da destra a sinistra) in una regola",
+    "optionF": "",
+    "correct": "optioaggiornnA"
+  },
+  {
+    "question":"Qual è il tipo della seguente espressione: <div class='code'>fun apply (a, b, 0, H, p) = () | apply (a, b, n, H, p) = (p+1;print(Int.toString(a)));</div>",
+    "optionA":"fn: int * 'a * int * b * int -> unit",
+    "optionB":"fn: int * 'a * int * (int -> int) * int -> string",
+    "optionC":"Nessuna delle altre risposte",
+    "optionD":"fn: int * 'a * int * b * int -> int",
+    "optionE":"fn: int * 'a * int * a * int -> unit",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Comando",
+    "optionA":"Il termine comando viene utilizzato per riferirsi solo a comandi condizionali o iterativi",
+    "optionB":"la sua valutazione non ritorna mai un valore",
+    "optionC":"non può modifcare lo stato",
+    "optionD":"è un entità sintattica la cui valutazione non necessariamente restituisce un valore ma può avere un side effect",
+    "optionE":"non è tipico dei linguaggi imperativi",
+    "optionF":"",
+    "correct":"optionD"
   }
+
 ]
