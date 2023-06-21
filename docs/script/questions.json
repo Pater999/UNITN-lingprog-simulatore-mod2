@@ -1478,5 +1478,364 @@
     "optionE": "int list",
     "optionF": "",
     "correct": "optionB"
+  },
+  {
+    "question":"Nel lambda calcolo",
+    "optionA":"Nessuna delle altre risposte",
+    "optionB":"In un applicazione e1e2, l'insieme delle variabili free è dato dall'unione delle variabili free rispettivamente in e1 e in e2 mentre quello delle variabili bound è dato dall'interesezione delle variabili bound rispettivamente in e1 e in e2",
+    "optionC":"L'insieme delle variabili free di un espressione costruita da una variabile (e.g., x) è l'insieme vuoto",
+    "optionD":"L'insieme delle variabili bound di un espressione costruita da una variabile (e.g., x) è l'insieme vuoto",
+    "optionE":"L'applicazione associa a destra",
+    "optionF":"",
+    "correct":"optionD"
+  },
+  {
+    "question":"Un garbage collector",
+    "optionA":"è basato su due fasi logiche: identificazione del garbage e raccolta del garbage",
+    "optionB":"Richiede un’implementazione basata sulla tecnica dei 'tombstone'",
+    "optionC":"Richiede un’implementazione basata sul meccanismo di 'lock and key'",
+    "optionD":"Nessuna della altre risposte",
+    "optionE":"Può essere implementato con il meccanismo di 'counting reference', che riesce sempre a identificare la memoria allocata ma non più utilizzata",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Beta-riducendo (λx.x(xy))(λz.zx) si ottiene",
+    "optionA":"nessuna delle altre risposte",
+    "optionB":"yxx",
+    "optionC":"λx.xyy",
+    "optionD":"xyx",
+    "optionE":"La riduzione non termina",
+    "optionF":"",
+    "correct":"optionB"    
+  },
+  {
+    "question": "In Prolog:",
+    "optionA": "Conta l'ordine (i) delle regole e (ii) dei predicati (da sinistra a destra) in una regola",
+    "optionB": "Nessuna delle altre risposte",
+    "optionC": "Non è mai possibile fare backtracking",
+    "optionD": "Conta solo l'ordine delle regole",
+    "optionE": "Conta solo l'ordine dei predicati (da destra a sinistra) in una regola",
+    "optionF": "",
+    "correct": "optioaggiornnA"
+  },
+  {
+    "question":"Qual è il tipo della seguente espressione: <div class='code'>fun apply (a, b, 0, H, p) = () | apply (a, b, n, H, p) = (p+1;print(Int.toString(a)));</div>",
+    "optionA":"fn: int * 'a * int * b * int -> unit",
+    "optionB":"fn: int * 'a * int * (int -> int) * int -> string",
+    "optionC":"Nessuna delle altre risposte",
+    "optionD":"fn: int * 'a * int * b * int -> int",
+    "optionE":"fn: int * 'a * int * a * int -> unit",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Comando",
+    "optionA":"Il termine comando viene utilizzato per riferirsi solo a comandi condizionali o iterativi",
+    "optionB":"la sua valutazione non ritorna mai un valore",
+    "optionC":"non può modifcare lo stato",
+    "optionD":"è un entità sintattica la cui valutazione non necessariamente restituisce un valore ma può avere un side effect",
+    "optionE":"non è tipico dei linguaggi imperativi",
+    "optionF":"",
+    "correct":"optionD"
+  },
+  {
+    "question":"Le funzioni di ordine superiore sono funzioni che hanno come parametro o come valore di ritorno altre funzioni:",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Non è mai possibile avere come valore di ritorno un'altra funzione",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Le biding policies sono importanti per la valutazione delle funzioni di ordine superiore",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"In ML non è possibile avere funzioni di ordine superiore",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Le funzioni di ordine superiore sono funzioni che hanno almeno due parametri",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"il cast è un meccanismo di conversione tra tipi esplicito",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"la coercizione è un meccanismo di conversione tra tipi esplicito",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Un tipo T1 è compatibile con un tipo T2 se il tipo T1 può essere usato in contesti in cui ci si aspetta di trovare oggetti di tipo T2",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"In caso di coercizione non è mai possibile convertire tipi che hanno una diversa rappresentazione dei valori",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Nei linguaggi moderni si preferisce il cast alla coercizione",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },{
+    "question":"La memoria statica è una memoria di sola lettura",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"L'entità allocata staticamente risiede in una zona fissa della memoria durante tutta l'esecuzione del programma",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Le variabili globali sono tipici esempi di entità allocate staticamente",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"L'allocazione statica della memoria viene realizzata durante l'esecuzione del programma",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"L'allocazione statica della memoria è necessaria per realizzare la ricorsione",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"L'environment in un blocco può essere solo locale o globale",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"L'environment globale contiene associazioni specifiche solo di un particolare blocco di programma",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Le associazioni dell'environment locale di un blocco vengono create nel momento in cui si entra in un blocco e distrutte quando si esce dal blocco",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Le variabli locali e parametri formali sono parte dell'enviroment locale di un blocco",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Non è mai possibile ereditare associazioni tra nomi ed entità denotabili da altri blocchi",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Nel ciclo fetch-decode-execute, una volta incrementato il Program counter non può più essere modificato da nessun altra istruzione",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Nel ciclo fetch-decode-execute, la fase fetch consiste nell'iterare molte volte l'operazione",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Nella fase fetch del ciclo fetch-decode-execute viene incrementato il Program counter",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Nessun registo viene utilizzato nel ciclo fetch-decode-execute",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Nella fase execute del ciclo fetch-decode-execute possono eventualmente essere caricati altri dati",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"I nomi possono essere predefiniti solo dal linguaggio e mai definiti dall'utente",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Il nome e l'entità che il nome denota sono la stessa cosa",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
+  },
+  {
+    "question":"Uno stesso nome può denotare oggetti diversi in momenti differenti",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"Uno stessa entità può avere più di nome",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionA"
+  },
+  {
+    "question":"I nomi possono essere definiti solo dall'utente e mia predefiniti dal linguaggio",
+    "optionA":"true",
+    "optionB":"false",
+    "optionC":"",
+    "optionD":"",
+    "optionE":"",
+    "optionF":"",
+    "correct":"optionB"
   }
 ]
