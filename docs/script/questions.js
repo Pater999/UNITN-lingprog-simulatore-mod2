@@ -168,7 +168,10 @@ function caricaDomanda(num) {
   numDomandaCorrente = num;
   var n = domandeProposte[num];
 
-  randomOrder = [0, 1, 2];
+  randomOrder = [0, 1];
+  if (domande[n].optionC != "") {
+    randomOrder.push(2);
+  }
   if (domande[n].optionD != "") {
     randomOrder.push(3);
   }
