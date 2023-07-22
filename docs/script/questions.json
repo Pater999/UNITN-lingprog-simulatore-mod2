@@ -1517,7 +1517,7 @@
     "optionD": "Conta solo l'ordine delle regole",
     "optionE": "Conta solo l'ordine dei predicati (da destra a sinistra) in una regola",
     "optionF": "",
-    "correct": "optioaggiornnA"
+    "correct": "optionA"
   },
   {
     "question":"Qual è il tipo della seguente espressione: <div class='code'>fun apply (a, b, 0, H, p) = () | apply (a, b, n, H, p) = (p+1;print(Int.toString(a)));</div>",
