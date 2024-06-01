@@ -16,7 +16,7 @@ A [QUESTO LINK](https://pater999.github.io/UNITN-lingprog-simulatore-mod2/index.
   * [Matrici Multidimensionali](https://stackoverflow.com/questions/56287596/in-which-memory-address-is-stored-an-element-in-a-multidimensional-matrix)
 
 ### Ultimo aggiornamento
-* Le domande del simulatore sono aggiornate all'esame di **giugno 2023**
+* Le domande del simulatore sono aggiornate all'esame di **luglio 2023**
 
 **NB:** Le soluzioni non vengono pubblicate dal professore. L'unico modo per mantenere questa repository aggiornata è ricordarsi le nuove domande o chiedere al professore di vedere la propria prova al ricevimento. Aprendo una [issue](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/issues), una [pull request](https://github.com/Pater999/UNITN-lingprog-simulatore-mod2/pulls) oppure contattandomi su [telegram](https://t.me/pater999) scrivendomi le nuove domande, potreste essere utili anche agli studenti degli anni successivi.
 
