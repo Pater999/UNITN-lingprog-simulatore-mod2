@@ -2068,5 +2068,295 @@
         "optionE": "",
         "optionF": "",
         "correct": "optionA"
+    },
+    {
+        "question": "In ML, qual è il risultato di <br><div class='code'>fun comp g = g o op +;<br>fun h y = y * 2;<br>comp h (3,1);<br></div>",
+        "optionA": "errore di compilazione",
+        "optionB": "7",
+        "optionC": "8",
+        "optionD": "6",
+        "optionE": "5",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "In ML, qual è il risultato di <br><div class='code'>fun comp g = g o op +;<br>fun h y = y * 2;<br>comp h (3,1);<br></div>",
+        "optionA": "errore di compilazione",
+        "optionB": "7",
+        "optionC": "8",
+        "optionD": "6",
+        "optionE": "5",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "B-riducendo (Ax.x) (Ayyy) (Az.zw) si ottiene",
+        "optionA": "ww",
+        "optionB": "nessuna delle altre risposte",
+        "optionC": "Xa.ax",
+        "optionD": "la riduzione non termina",
+        "optionE": "ZW",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Dato il seguente pseudo-codice. Qual è il valore di ritorno di g se i parametri sono passati per nome?<div class='code'><br>int j = 10;<br>int f (int x)<br>{<br>    x = 6;<br>    j = 2;<br>    return x/j;<br>}<br>int g()<br>{<br>    int i, k;<br>    i=j/5;<br>    k = f(i);<br>    return i+k;<br>}</div>",
+        "optionA": "9",
+        "optionB": "5",
+        "optionC": "dipende dallo scope",
+        "optionD": "0",
+        "optionE": "nessuna delle altre",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "In ML, qual è il tipo di<br><div class='code'>fun g[] print('nil')<br>Ig (x::xs) g xs;</div>",
+        "optionA": "fn: 'a list -> unit",
+        "optionB": "fn: ''a list -> unit",
+        "optionC": "fn: 'a list -> string",
+        "optionD": "fn: ' 'a list -> string",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Un'entità denotabile è",
+        "optionA": "Un'entità che può essere memorizzata",
+        "optionB": "Un'entità che viene utilizzata come riferimento per un'altra entità",
+        "optionC": "Un'entità a cui può essere dato un nome",
+        "optionD": "Un'entità che ancora non compare nell'ambiente",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Il type system di un linguaggio",
+        "optionA": "include anche la specifica di quando effettuare il controllo dei tipi (se staticamente o dinamicamente)",
+        "optionB": "nessuna delle altre risposte",
+        "optionC": "è definito esattamente da (i) la definizione dei tipi predefiniti, (ii) i meccanismi per definire nuovi tipi e (iii) i meccanismi di controllo dei tipi (equivalenza, compatibilità e inferenza)",
+        "optionD": "è definito solo ai meccanismi di controllo dei tipi, cioè equivalenza, compatibilità e inferenza",
+        "optionE": "include solo la definizione dei tipi predefiniti e i meccanismi per definire nuovi tipi",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sulle funzioni di ordine superiore è/sono vera/e?<br>Non è mai possibile avere come valore di ritorno un'altra funzione",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sulle funzioni di ordine superiore è/sono vera/e?<br>Le funzioni di ordine superiore sono funzioni che hanno come parametro o come valore di ritorno altre funzioni",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sulle funzioni di ordine superiore è/sono vera/e?<br>In ML non è possibile avere funzioni di ordine superiore",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sulle funzioni di ordine superiore è/sono vera/e?<br>Le funzioni di ordine superiore sono funzioni che hanno almeno due parametri",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sulle funzioni di ordine superiore è/sono vera/e?<br>Le binding policies sono importanti per la valutazione delle funzioni di ordine superiore",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "La valutazione con corto circuito (o lazy evaluation di espressioni booleane) del predicato 'B1 || B2' (dove || rappresenta un or logico):",
+        "optionA": "Stabilisce che se 'B1' è vero, allora 'B2' non viene valutato",
+        "optionB": "Stabilisce che se 'B2' è falso, allora 'B1' non viene valutato",
+        "optionC": "Crea un non-determinismo nella valutazione di 'B1' e 'B2'",
+        "optionD": "Nessuna delle altre risposte",
+        "optionE": "Stabilisce che 'B1' e 'B2' devono essere valutati in parallelo",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Qual è la caratteristica principale dell'allocazione della memoria mediante heap?",
+        "optionA": "Permette l'allocazione e la deallocazione della memoria a tempo di compilazione",
+        "optionB": "Permette l'allocazione e la deallocazione manuale della memoria",
+        "optionC": "Permette l'allocazione e la deallocazione della memoria in qualunque momento a runtime",
+        "optionD": "Permette l'allocazione e la deallocazione illimitata della memoria",
+        "optionE": "Nessuna delle risposte precedenti",
+        "optionF": "",
+        "correct": "optionC"
+    },
+    {
+        "question": "Data la seguente lambda-expression, quali sono le variabili free? <div class='code'>(Aa. (Ab. bf (c. dc ag)))</div>",
+        "optionA": "b",
+        "optionB": "Nessuna delle altre risposte",
+        "optionC": "a, b, c",
+        "optionD": "f",
+        "optionE": "d, f, g",
+        "optionF": "",
+        "correct": "optionD"
+    },
+    {
+        "question": "Dato il frammento di programma (espresso in pseudo-codice) riportato di seguito, qual è il valore di ritorno di f3(), assumendo scoping dinamico?<br><div class='code'>int i, j;<br>void f1(void) {<br>    i = 8; j = 9;<br>}<br>void f2(void) {<br>    int i;<br>    f1();<br>    j = 5;<br>}<br>int f3(void) {<br>    int i, k;<br>    i = 10;<br>    j = 20;<br>    k = i + j;<br>    f2();<br>    return k - j - i;<br>}</div>",
+        "optionA": "2",
+        "optionB": "0",
+        "optionC": "Non è possibile dirlo",
+        "optionD": "11",
+        "optionE": "Nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Qual è il risultato del seguente frammento di codice in Scala?<br><div class='code'>val numbers = List(1, 2, 3, 4)<br>val s = for (n <- numbers) yield n * n</div>",
+        "optionA": "List(1, 4, 9, 16)",
+        "optionB": "List(1, 2, 3, 4)",
+        "optionC": "Nessuna delle altre alternative",
+        "optionD": "149 16",
+        "optionE": "(1, 4, 9, 16)",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "In caso di frammentazione interna",
+        "optionA": "Lo spazio necessario per il blocco da allocare è più grande dello spazio disponibile in memoria",
+        "optionB": "I programmi che allocano memoria dinamicamente non funzionano correttamente",
+        "optionC": "Nessuna delle altre risposte",
+        "optionD": "Viene perso spazio utile perchè lo spazio necessario per il blocco da allocare è più piccolo del blocco disponibile in memoria",
+        "optionE": "Lo spazio necessario per il blocco da allocare è disponibile in memoria ma non può essere utilizzato",
+        "optionF": "",
+        "correct": "optionD"
+    },
+    {
+        "question": "I record di attivazione:",
+        "optionA": "possono contenere informazioni sulle variabili locali e sui risultati intermedi",
+        "optionB": "vengono utilizzati solo per i blocchi e non per le procedure",
+        "optionC": "vengono allocati a tempo di compilazione",
+        "optionD": "non vengono mai utilizzati in caso di funzioni o procedure ricorsive",
+        "optionE": "nessuna delle altre risposte",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "In Prolog, cosa restituiscono le seguenti queries (true o false)?<br>?- 8 is 5+3.",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "In Prolog, cosa restituiscono le seguenti queries (true o false)?<br>?- 5+1 = 4+2.",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "In Prolog, cosa restituiscono le seguenti queries (true o false)?<br>?- 5+1 is 6.",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "In Prolog, cosa restituiscono le seguenti queries (true o false)?<br>?- 5+1 is 4+2.",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "In Prolog, cosa restituiscono le seguenti queries (true o false)?<br>?- 4 = 3+1.",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sui blocchi è/sono vera/e:<br>Un blocco è una sezione di un programma identificata da simboli di apertura e di chiusura (che può contenere dichiarazioni locali a quella parte di codice)",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionA"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sui blocchi è/sono vera/e:<br>I blocchi anonimi sono procedure senza parametri",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sui blocchi è/sono vera/e:<br>I blocchi nei linguaggi di programmazione non possono mai essere innestati",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sui blocchi è/sono vera/e:<br>Le parentesi graffe non possono essere utilizzate in nessun linguaggio per delimitare un blocco",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionB"
+    },
+    {
+        "question": "Quale/i delle seguenti affermazioni sui blocchi è/sono vera/e:<br>I blocchi anonimi possono comparire in un qualsiasi punto del programma in cui compare un comando",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "",
+        "optionD": "",
+        "optionE": "",
+        "optionF": "",
+        "correct": "optionA"
     }
 ]
