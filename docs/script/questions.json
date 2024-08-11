@@ -1257,7 +1257,7 @@
         "optionD": "Ha una definizione semplice",
         "optionE": "Nessuna delle altre risposte",
         "optionF": "",
-        "correct": "optionE"
+        "correct": "optionA"
     },
     {
         "question": "Qual è l'output del seguente codice: <div class='code'>val m = (List.map(fn x=>x*x))[4, 5, 6]; List.foldr Int.+0 m;</div>",
